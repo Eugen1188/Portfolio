@@ -1,0 +1,35 @@
+.main-header-cont {
+    height: 98px;
+    max-width: 100%;
+    background: url(/assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 13.56%, rgba(0, 0, 0, 0.6) 84.01%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 96px 0 96px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.choose-lang {
+    width: 84px;
+    height: 28px;
+    border: 1px #3DCFB6 solid;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+

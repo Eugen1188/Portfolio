@@ -1,0 +1,43 @@
+.marquee-cont {
+    position: absolute;
+    bottom: 60px;
+    left: -20px;
+    width: 110%;
+    height: 62px;
+    gap:  30px;
+    background-color: #ffffff1f;
+    transform: rotate(-3deg);
+    overflow: hidden;
+    display: flex;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    .marquee{
+        width: 110%;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        animation: marquee 25s linear infinite;
+        color: #3DCFB6;
+        gap: 56px;
+        @keyframes marquee {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-100%);
+            }
+        }
+        p {
+            font-family: 'Karla';
+            font-weight: 400;
+            font-size: 32px;
+            opacity: 1;
+            z-index: 999;
+        }
+        .bullet {
+            font-size: 28px;
+        }
+    }
+}
