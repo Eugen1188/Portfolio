@@ -4,16 +4,60 @@
 
 @font-face {
     font-family: 'Fira';
-    src: url('/assets/fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
+    font-family: 'Fira-light';
+    src: url('assets/fonts/Fira/static/FiraCode-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: 'Karla';
-    src: url('/assets/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-  
+@font-face {
+  font-family: 'Karla-light';
+  src: url('assets/fonts/Karla/static/Karla-Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+.small-headline {
+  font-family: 'Karla';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.06px;
+  color: #3DCFB6;
+}
+
+.paragraph-no-opacity {
+  font-family: 'Karla-light';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #FFFFFF;
+}
+
+.std-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 143px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  font-family: 'Karla-light';
+  color: #FFFFFF;
+  font-size: 18px
+}

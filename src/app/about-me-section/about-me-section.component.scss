@@ -7,7 +7,7 @@
   }
   
   .me-section {
-    width: 1232px;
+    width: 1300px;
     height: 708px;
     padding-top: 144px;
     position: relative;
@@ -38,16 +38,7 @@
     height: 610px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    .small-headline {
-      font-family: Karla;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28.06px;
-      color: #3DCFB6;
-    }
+    align-self: flex-end;
     .about-me {
       margin-top: 20px;
       background-color: #3DCFB61A;
@@ -67,14 +58,6 @@
       .description-cont {
         display: grid;
         gap: 32px;
-      }
-      .main-text-cont {
-        p {
-          font-family: 'Karla';
-          font-weight: 400;
-          font-size: 18px;
-          color: #FFFFFF;
-        }
       }
       .me-description {
         display: flex;
