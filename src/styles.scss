@@ -38,12 +38,21 @@
   color: #3DCFB6;
 }
 
+h1 {
+  font-family: 'Fira';
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #3DCFB6;
+  letter-spacing: -1.92px;
+}
+
 .paragraph-no-opacity {
-  font-family: 'Karla-light';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21.6px;
-  color: #FFFFFF;
+  font-family: 'Karla-light' !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
+  color: #FFFFFF !important;
 }
 
 .std-btn {

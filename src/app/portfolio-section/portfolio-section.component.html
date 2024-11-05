@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="portfolio-section">
+    <div class="portfolio-cont">
+      <span class="small-headline">Portfolio</span>
+      <h1>Featured Projects</h1>
+      <div class="help-cont">
+        <span class="paragraph-no-opacity"
+          >Explore a selection of my work here - Interact with projects to see
+          my skills in action.</span
+        >
+      </div>
+
+      <table style="width: 100%">
+        <tbody>
+          <tr *ngFor="let user of users; index as i">
+            <td>{{ user.projekte }}</td>
+            <td class="paragraph-no-opacity">
+              <span *ngFor="let tool of user.tools; index as y">
+                {{ tool }}
+                <span *ngIf="y == 0 || y != user.tools.length - 1">|</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

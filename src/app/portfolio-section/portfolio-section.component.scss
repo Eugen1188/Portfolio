@@ -1,0 +1,41 @@
+.main {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;;
+    .portfolio-section {
+        width: 1300px;
+        .portfolio-cont {
+            display: flex;
+            gap: 41px;
+            display: flex;
+            flex-direction: column;
+        }
+        .help-cont {
+            width: 456px;
+            height: 44px;
+        }
+    }
+}
+
+tr {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(61, 207, 182, 1);
+    padding: 40px 32px;
+    &:first-child {
+        border-top: 1px solid rgba(61, 207, 182, 1);
+    }
+    &:last-child {
+        border-bottom: 1px solid rgba(61, 207, 182, 1);
+    }
+    td {
+        font-family: 'Fira';
+        font-size: 24px;
+        line-height: 28.8px;
+        color: white;
+    }
+}
