@@ -39,3 +39,17 @@ tr {
         color: white;
     }
 }
+
+.table-portfolioview-cont {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .portfolioview-cont {
+        position: relative;
+        width: 300px;
+        img {
+            width: 316px;
+            height: 220px;
+        }
+    }
+}

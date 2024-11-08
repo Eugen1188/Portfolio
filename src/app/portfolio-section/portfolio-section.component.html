@@ -10,19 +10,33 @@
         >
       </div>
 
-      <table style="width: 100%">
-        <tbody>
-          <tr *ngFor="let user of users; index as i">
-            <td>{{ user.projekte }}</td>
-            <td class="paragraph-no-opacity">
-              <span *ngFor="let tool of user.tools; index as y">
-                {{ tool }}
-                <span *ngIf="y == 0 || y != user.tools.length - 1">|</span>
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-portfolioview-cont">
+        <table style="width: 100%">
+          <tbody>
+            <tr *ngFor="let user of users; index as i">
+              <td>{{ user.projekte }} <img style="display: none;" src="assets/img/arrow_outward.png" alt=""></td>
+              <td class="paragraph-no-opacity">
+                <span *ngFor="let tool of user.tools; index as y">
+                  {{ tool }}
+                  <span *ngIf="y == 0 || y != user.tools.length - 1">|</span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="portfolioview-cont">
+          <img style="position: absolute; top: 0px;" src="assets/img/join.png" alt="" class="view-img">
+          <img style="position: absolute; top: 50%;" src="assets/img/elpolloloco.png" alt="" class="view-img">
+          <img style="position: absolute; bottom: 0%;" src="assets/img/dabubble.png" alt="" class="view-img">
+
+        </div>
+
+      </div>
+
+
+
+
     </div>
   </div>
 </div>
