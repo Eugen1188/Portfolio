@@ -26,6 +26,17 @@ tr {
     align-items: center;
     border-bottom: 1px solid rgba(61, 207, 182, 1);
     padding: 40px 32px;
+    .project-name-cont {
+        display: flex;
+    }
+    .space {
+        display: flex;
+        gap: 6px;
+    }
+    .arrow-outward {
+        width: 14px;
+        height: 14px;
+    }
     &:first-child {
         border-top: 1px solid rgba(61, 207, 182, 1);
     }
@@ -37,8 +48,34 @@ tr {
         font-size: 24px;
         line-height: 28.8px;
         color: white;
+        align-items: center;
+        .arrow-outward {
+            width: 14px;
+            height: 14px;
+            margin-left: 8px;
+        }
+        .pipe {
+            color: #3DCFB6;
+        }
+    }
+    &:hover {
+        .img-cont0 {
+            display: flex;
+        }
+        .img-cont1 {
+            display: flex;
+        }
+        .img-cont2 {
+            display: flex;
+        }
+        .arrow-outward {
+            display: flex;
+        }
+
     }
 }
+
+
 
 .table-portfolioview-cont {
     display: flex;
@@ -53,3 +90,13 @@ tr {
         }
     }
 }
+
+
+
+
+.color-hover {
+    &:hover  {
+        cursor: pointer;
+        background: #3DCFB64D;        ;
+    }
+ }
