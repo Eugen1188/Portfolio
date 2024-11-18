@@ -1,0 +1,65 @@
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000000bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projekt-screen-cont {
+    width: 80%;
+    height: 80vh;
+    background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+    border: 1px solid #3dcfb6;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .project-info-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      .number-project {
+        font-family: "KARLA";
+        font-size: 128px;
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      .projectname {
+        font-family: "Fira";
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 51.2px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+      }
+      .project-about {
+        font-family: 'Fira';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #3DCFB6;
+      }
+    }
+  }
+
+  .project-img-nav-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+  }
+}

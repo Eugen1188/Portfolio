@@ -56,19 +56,18 @@ h1 {
 }
 
 .std-btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 143px;
-  height: 48px;
+  padding: 10px 20px;
+  height: 32px;
   border: 1px solid #ffffff;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
+  border-radius: 100px;
   font-family: 'Karla-light';
   color: #FFFFFF;
-  font-size: 18px
+  font-size: 18px;
+  line-height: 21.6px;
+  white-space: nowrap;
 }
 
 .d-none {
