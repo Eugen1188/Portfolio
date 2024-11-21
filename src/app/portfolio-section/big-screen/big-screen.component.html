@@ -1,5 +1,5 @@
-<div class="main">
-  <div class="projekt-screen-cont">
+<div class="main-window" [class.d-none]="!isVisible" (click)="closeMainContainer()">
+  <div class="projekt-screen-cont" (click)="$event.stopPropagation()">
     <div class="project-info-cont" *ngIf="index != null">
       <h1 class="number-project" >{{ index + 1 | number : "2.0" }}</h1>
       <span class="projectname">{{ projects[index].portfolio }}</span>
@@ -17,12 +17,12 @@
         </div>
       </div>
       <div class="project-buttons-cont">
-        <div class="std-btn">GitHub <img src="assets/img/arrow_outward.png" alt=""></div>
-        <div class="std-btn">Live Test <img src="assets/img/arrow_outward.png" alt=""></div>
+        <div class="std-btn on-hover"><div class="inner-btn-cont"><span>GitHub</span><img src="assets/img/arrow_forward_blue.png" alt=""></div></div>
+        <div class="std-btn on-hover"><div class="inner-btn-cont"><span>Live Test</span><img src="assets/img/arrow_forward_blue.png" alt=""></div></div>
       </div>
     </div>
     <div class="project-img-nav-cont">
-      <img src="assets/img/close.png" alt="" />
+      <img src="assets/img/close_small.png" alt="" />
       <img src="assets/img/project_img/{{ index }}.png" alt="" />
       <div class="next-cont">
         <span>Next project</span>

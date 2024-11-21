@@ -36,6 +36,7 @@ tr {
     .arrow-outward {
         width: 14px;
         height: 14px;
+        display: none;
     }
     &:first-child {
         border-top: 1px solid rgba(61, 207, 182, 1);
@@ -60,13 +61,13 @@ tr {
     }
     &:hover {
         .img-cont0 {
-            display: flex;
+            display: flex !important;
         }
         .img-cont1 {
-            display: flex;
+            display: flex !important;
         }
         .img-cont2 {
-            display: flex;
+            display: flex !important;
         }
         .arrow-outward {
             display: flex;

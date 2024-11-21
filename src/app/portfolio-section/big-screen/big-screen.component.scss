@@ -1,4 +1,4 @@
-.main {
+.main-window {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8,21 +8,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   .projekt-screen-cont {
-    width: 80%;
-    height: 80vh;
+    width: 1248px;
+    height: 656px;
     background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
     border: 1px solid #3dcfb6;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 80px 60px;
     .project-info-cont {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      width: 50%;
+      .project-buttons-cont {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        img {
+          margin-left: 4px;
+          transition: transform 0.1s ease;
+        }
+      }
       .number-project {
         font-family: "KARLA";
         font-size: 128px;
@@ -30,7 +41,6 @@
         line-height: 100px;
         letter-spacing: -0.02em;
         text-align: left;
-        text-underline-position: from-font;
         text-decoration-skip-ink: none;
       }
       .projectname {
@@ -40,26 +50,74 @@
         line-height: 51.2px;
         letter-spacing: -0.03em;
         text-align: left;
-        text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: white;
       }
       .project-about {
-        font-family: 'Fira';
+        font-family: "Fira";
         font-size: 24px;
         font-weight: 700;
         line-height: 28.8px;
         text-align: left;
+        text-decoration-skip-ink: none;
+        color: #3dcfb6;
+      }
+      .tools-cont {
+        display: flex;
+        font-family: 'Karla-light';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        color: #3DCFB6;
+        color: white;
+        gap: 16px;
+        .tool {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
       }
     }
   }
 
   .project-img-nav-cont {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: self-end;
+    width: 50%;
+    .next-cont {
+      display: flex;
+      align-items: center;
+      span {
+        font-family: 'Karla';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        color: #3dcfb6;
+      }
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.on-hover {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    border-color: #3dcfb6;
+    span {
+      color: #3dcfb6;
+    }
+    img {
+      transform: translate(6px, -2px);
+        }
   }
 }

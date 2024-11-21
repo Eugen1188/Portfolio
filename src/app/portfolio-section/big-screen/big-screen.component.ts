@@ -10,22 +10,17 @@ import { CommonModule } from '@angular/common';
 })
 export class BigScreenComponent {
 
-
   @Input() index: number | null = null;
-  // @Output() triggerBigScreen = new EventEmitter<number>();
   @Input() projects: any [] = [];
-  ngOnChanges() {
-    if (this.index !== null) {
-      this.triggerBigScreenMethod(this.index);
-    }
+  @Input() isVisible: boolean = false;
+  @Output() isVisibleChange = new EventEmitter<boolean>();
+
+  closeMainContainer() {
+    this.isVisible = false;
+    console.log('Kindkomponente' + this.isVisible);
+    this.isVisibleChange.emit(this.isVisible);
+    console.log('Main container geschlossen.');
+    console.log(this.isVisible);
+
   }
-
-  triggerBigScreenMethod(i: number): void {
-    console.log("Event in der Kindkomponente ausgelöst! Index:", i);
-    // this.triggerBigScreen.emit(i);
-    console.log(this.projects[i].portfolio + "HAllo") ;
-    console.log(this.projects[i].tools) ;
-  }
-
-
 }

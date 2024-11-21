@@ -14,19 +14,19 @@
         <table style="width: 100%">
           <tbody>
             <tr (click)="onDivClick(i)" class="style-table dynamic-table{{ i }} color-hover" *ngFor="let project of projects; index as i">
-              <td class="project-name-cont">{{ project.portfolio }} <img class="arrow-outward d-none" src="assets/img/arrow_outward.png" alt=""></td>
+              <td class="project-name-cont">{{ project.portfolio }} <img class="arrow-outward" src="assets/img/arrow_outward.png" alt=""></td>
               <td class="paragraph-no-opacity space">
                 <span *ngFor="let tool of project.tools; index as y">
                   {{ tool }}
                   <span class="pipe" *ngIf="y != project.tools.length - 1">|</span>
                 </span>
               </td>
-              <td class="img-cont{{ i }} d-none" style="position: absolute; right: 0;"><img src="assets/img/{{ i }}.png" alt="" class="view-img"></td>
+              <td class="img-cont{{ i }}" style="position: absolute; right: 0; display: none;"><img src="assets/img/{{ i }}.png" alt="" class="view-img"></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
-  <app-big-screen *ngIf="selectedIndex != null" [projects]="projects" [index]="selectedIndex"></app-big-screen>
+  <app-big-screen [projects]="projects" [index]="selectedIndex" [isVisible]="isVisible" (isVisibleChange)="visibilityChange($event)"></app-big-screen>
 </div>
