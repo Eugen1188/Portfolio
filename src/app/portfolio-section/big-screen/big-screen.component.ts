@@ -6,21 +6,30 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './big-screen.component.html',
-  styleUrl: './big-screen.component.scss'
+  styleUrl: './big-screen.component.scss',
 })
 export class BigScreenComponent {
-
   @Input() index: number | null = null;
-  @Input() projects: any [] = [];
+  @Input() projects: any[] = [];
   @Input() isVisible: boolean = false;
   @Output() isVisibleChange = new EventEmitter<boolean>();
+  @Output() renderIndex = new EventEmitter<number>();
 
-  closeMainContainer() {
+  renderNextProject() {
+    if (this.index != null) {
+      this.index = this.index + 1;
+      if (this.index == this.projects.length) {
+        this.index = 0;
+      }
+    }
+  }
+
+  closeScreen() {
     this.isVisible = false;
-    console.log('Kindkomponente' + this.isVisible);
     this.isVisibleChange.emit(this.isVisible);
-    console.log('Main container geschlossen.');
-    console.log(this.isVisible);
-
+    if (this.index != null) {
+      this.renderIndex.emit(this.index);
+    }
+    console.log('closeindex' + this.index)
   }
 }

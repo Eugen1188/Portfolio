@@ -28,5 +28,5 @@
       </div>
     </div>
   </div>
-  <app-big-screen [projects]="projects" [index]="selectedIndex" [isVisible]="isVisible" (isVisibleChange)="visibilityChange($event)"></app-big-screen>
+  <app-big-screen [projects]="projects" [index]="selectedIndex" [isVisible]="isVisible" (isVisibleChange)="visibilityChange($event)" (renderIndex)="renderIndex($event)"></app-big-screen>
 </div>
