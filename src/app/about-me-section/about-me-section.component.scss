@@ -7,13 +7,14 @@
   }
   
   .me-section {
-    width: 1300px;
+    width: 90%;
     height: 708px;
     padding-top: 144px;
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 144px;
+    overflow: hidden;
     .picure-cont {
       position: relative;
       width: 568px;
@@ -35,7 +36,6 @@
 
   .about-me-cont {
     width: 568px;
-    height: 610px;
     display: flex;
     flex-direction: column;
     align-self: flex-end;

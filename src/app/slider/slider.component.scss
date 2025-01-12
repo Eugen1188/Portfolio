@@ -1,0 +1,91 @@
+.main {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    .slider {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .slider-element {
+        position: absolute;
+        width: 450px;
+        height: 260px;
+        border: 1px solid #3DCFB6;
+        background: #3DCFB64D;
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+        border-radius: 32px;
+      }
+    }
+
+    .slide-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 45px 40px;
+        color: white;
+        justify-content: space-between;
+        img {
+            position: absolute;
+            width: 89px;
+            height: 64px;
+            top: -16px;
+            left: -44px;
+        }
+        .author-cont {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 18px;
+            }
+            .bar {
+                width: 100%;
+                height: 1px;
+                background: white;
+            }
+        }
+    }
+
+
+    .active-rec {
+        transform: scale(1.2) !important;
+        opacity: 1 !important;
+      }
+  
+    .slider-nav-cont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      img {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .active-circle {
+    background-color: #3dcfb6 !important; 
+  }

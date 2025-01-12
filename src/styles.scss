@@ -1,58 +1,66 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: 'Fira';
-    src: url('assets/fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Fira-light';
-    src: url('assets/fonts/Fira/static/FiraCode-Light.ttf') format('truetype');
-    font-weight: light;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Karla';
-    src: url('assets/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Fira";
+  src: url("assets/fonts/Fira/FiraCode-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Karla-light';
-  src: url('assets/fonts/Karla/static/Karla-Light.ttf') format('truetype');
+  font-family: "Fira-light";
+  src: url("assets/fonts/Fira/static/FiraCode-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("assets/fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla-light";
+  src: url("assets/fonts/Karla/static/Karla-Light.ttf") format("truetype");
   font-weight: light;
   font-style: normal;
 }
 
 .small-headline {
-  font-family: 'Karla';
+  font-family: "Karla";
   font-weight: 500;
   font-size: 24px;
   line-height: 28.06px;
-  color: #3DCFB6;
+  color: #3dcfb6;
 }
 
 h1 {
-  font-family: 'Fira';
+  font-family: "Fira";
   font-size: 64px;
   line-height: 64px;
   font-weight: 700;
-  color: #3DCFB6;
+  color: #3dcfb6;
   letter-spacing: -1.92px;
 }
 
+h2 {
+  font-family: "Fira";
+  font-size: 32px;
+  font-weight: 700;
+  color: #3dcfb6;
+}
+
 .paragraph-no-opacity {
-  font-family: 'Karla-light' !important;
+  font-family: "Karla-light" !important;
   font-weight: 400 !important;
   font-size: 18px !important;
   line-height: 21.6px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .std-btn {
@@ -63,13 +71,48 @@ h1 {
   height: 32px;
   border: 1px solid #ffffff;
   border-radius: 100px;
-  font-family: 'Karla-light';
-  color: #FFFFFF;
+  font-family: "Karla-light";
+  color: #ffffff;
   font-size: 18px;
   line-height: 21.6px;
   white-space: nowrap;
+  position: relative;
+  overflow: auto;
+  span {
+    transition: transform 0.3s;
+  }
+  a {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  &:hover span {
+    transform: translateX(-300px);
+  }
 }
 
 .d-none {
   display: none !important;
+}
+
+svg {
+  cursor: pointer;
+  .logo-ini {
+      transition: 0.1s ease-in-out;
+  }
+  .logo-name {
+      transition: 0.1s ease-in-out;
+
+  }
+  &:hover .logo-ini {
+      fill: rgba(61, 207, 183, 0);
+      stroke: #3DCFB6;
+      }
+  &:hover .logo-name {
+          fill: rgba(61, 207, 183, 0);
+          stroke: #ffffff;
+
+  }
 }

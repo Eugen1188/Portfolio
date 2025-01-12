@@ -23,13 +23,53 @@
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
+    .eng {
+        width: 44px;
+        height: 28px;
+        padding: 0px 12px 0px 12px;
+        gap: 10px;
+        border-radius: 100px 0px 0px 0px;
+        opacity: 0px;
+        border-radius: 100%;
+        background-color: rgba(61, 207, 182, 1);
+    }
 }
 
 nav {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
 }
 
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92px;
+    height: 35px;
+    &:hover .circle {
+        display: flex;
+    }
+    .circle {
+        border-radius: 100%;
+        width: 6.4px;
+        height: 6.4px;
+        background-color: rgba(61, 207, 182, 1);
+        transform: translateY(5px);
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Fira-light';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26.24px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 255, 255, 1);
+    }
+}

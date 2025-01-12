@@ -1,0 +1,50 @@
+.main {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.footer-main-cont {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    .info {
+        height: 126px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .profession {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+            font-family: 'Karla-light';
+            font-size: 16px;
+            color: white;
+        }
+    }
+    .copyright {
+        font-family: 'Fira-light';
+        color: #3DCFB6;
+        font-size: 18px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        a {
+            text-decoration: none;
+            font-family: 'Karla-light';
+            font-size: 16px;
+            color: white;
+            font-family: 'Karla-light';
+            line-height: 19.2px;
+        }
+    }
+}
+

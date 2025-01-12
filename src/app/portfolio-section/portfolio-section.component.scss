@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80vh;;
+    height: 80vh;
+    overflow: hidden;
     .portfolio-section {
-        width: 1300px;
+        width: 90%;
         .portfolio-cont {
             display: flex;
             gap: 41px;

@@ -1,3 +1,39 @@
 <div class="main">
-    
+
+  <h2>What my colleagues say about me</h2>
+  <div class="slider">
+    <div
+      class="slider-element"
+      *ngFor="let recommendation of recommendations; let index = index"
+      [class.active-rec]="currentSlide == index + 1"
+      [ngStyle]="getSlideStyle(index)"
+    >
+      <div class="slide-content"> 
+          <img class="quotes" src="assets/img/quotes.png" alt="">
+          <span class="paragraph-no-opacity">{{ recommendations[index].message }}</span>
+          <div class="author-cont">
+            <div class="bar"></div>
+            <span class="paragraph-no-opacity">{{ recommendations[index].author}}</span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav-cont">
+    <img
+      src="assets/img/arrow_backward.png"
+      alt="Backward"
+      (click)="moveSlider('backward')"
+    />
+    <div
+      class="circle"
+      *ngFor="let i of [1, 2, 3]; let index = index"
+      [class.active-circle]="currentSlide == index + 1"
+      (click)="moveToSlide(index + 1)"
+    ></div>
+    <img
+      src="assets/img/arrow_forward.png"
+      alt="Forward"
+      (click)="moveSlider('forward')"
+    />
+  </div>
 </div>

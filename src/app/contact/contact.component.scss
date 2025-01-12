@@ -1,0 +1,243 @@
+.main {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  .contact-main-cont {
+    width: 90%;
+    display: flex;
+  }
+}
+
+.contact-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .contact-des-cont {
+    display: flex;
+    flex-direction: column ;
+    gap: 16px;
+    .needfrontend {
+      display: flex;
+      gap: 4px;
+    }
+    .qeustion {
+      font-family: 'Fira';
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #3dcfb6;
+    }
+    .small-para-thin {
+      font-family: 'Karla-light';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: white;
+    }
+    .small-para-bold {
+      font-family: 'Karla';
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: white;
+    }
+  }
+}
+
+.form-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-cont {
+  overflow: auto;
+  display: flex;
+  position: relative;
+  place-self: center;
+  width: 139px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #1c1c1c00;
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Karla-light';
+  font-size: 18px;
+  justify-content: center;
+  &:hover span {
+    transform: translateX(-120px);
+  }
+  input {
+    cursor: pointer;
+    background-color: #1c1c1c00;
+    border: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  span {
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+/* Stile für alle Elemente */
+.border-hover-first,
+.border-hover,
+.border-hover-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 616px;
+  height: 131px;
+  border-bottom: 1px solid rgba(61, 207, 182, 0.5);
+}
+
+.border-hover-first {
+  border-top: 1px solid rgba(61, 207, 182, 0.5);
+}
+
+.hov2:hover .border-hover {
+  border-top: 1px solid #3dcfb6;
+  border-bottom: 1px solid #3dcfb6;
+}
+
+.hov1:hover .border-hover-first {
+  border-top: 1px solid #3dcfb6;
+  border-bottom: 1px solid #3dcfb6;
+}
+
+.hov3:hover .border-hover-last {
+  border-top: 1px solid #3dcfb6;
+  border-bottom: 1px solid #3dcfb6;
+}
+
+
+
+
+.form-line-cont {
+  cursor: pointer;
+  label {
+    font-family: "Fira";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #3dcfb6;
+  }
+  input {
+    outline: none;
+    text-rendering: auto;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgba(118, 118, 118, 0), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+  }
+  textarea {
+    resize: none;
+    background-color: #1c1c1c00;
+    border: none;
+    outline: none;
+  }
+}
+
+.checkbox-policy-main-cont {
+  display: flex;
+  gap: 16px;
+  color: white;
+  font-family: "Karla";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  width: 616px;
+  height: 131px;
+  gap: 16px;
+  align-items: center;
+  a {
+    color: #3dcfb6;
+    text-decoration: none;
+  }
+  .checkbox-cont {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #3dcfb700;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #3dcfb763;
+      .checkbox {
+        background-color: #3dcfb763;
+      }
+    }
+    .checkmark {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .checkmark::after {
+        content: "✔"; /* Häkchen */
+        font-size: 9px;
+        color: #3dcfb6;
+        background-color: #3dcfb700;
+    }   
+  }
+
+  .checkbox {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    appearance: none;
+    border: 2px solid #3dcfb6;
+    cursor: pointer;
+    background-color: #1c1c1c00;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    &:checked + .checkmark {
+        display: flex;
+    }
+  }
+}
