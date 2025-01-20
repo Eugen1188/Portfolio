@@ -27,7 +27,7 @@
     align-items: center;
     &:hover {
         border: 1px solid rgb(255, 255, 255);
-        .ger {
+        .eng {
             border: 1px solid rgba(61, 207, 182, 1);
         }
     }
@@ -40,22 +40,21 @@
         justify-content: center;
         align-items: center;
     }
-    .ger {
+    .eng {
+        z-index: 999;
         border: 1px solid rgba(61, 207, 182, 1);
         border-radius: 50px 50px 50px 50px;
+        pointer-events: none;
 
     }
-    .eng {
+    .ger {
         background-color: rgba(127, 255, 212, 0);
         border-radius: 50px 50px 50px 50px;
         color: rgba(61, 207, 182, 0.5);
+        cursor: pointer;
     }
 }
 
-
-.link-hover-cont {
-
-}
 nav {
     max-width: 100%;
     display: flex;

@@ -141,9 +141,36 @@
     bottom: 0;
     right: 112px;
     gap: 24px;
+    .myemail:hover {
+        color: #3DCFB6;
+    }
+    img {
+        &:hover {
+            filter: brightness(4);
+        }
+    }
+    .circle {
+        border-radius: 100%;
+        width: 6.4px;
+        height: 6.4px;
+        background-color: rgba(61, 207, 182, 1);
+        transform: translateX(8px);
+        display: none;
+    }
     span {
         transform: rotate(-90deg);
         margin-bottom: 90px;
+    }
+}
+
+.logo-img-cont {
+    display: flex;
+    align-items: center;
+    align-self: baseline;
+    &:hover {
+        .circle {
+            display: flex;
+        }
     }
 }
 

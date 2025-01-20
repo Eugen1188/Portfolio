@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="form-cont">
-      <form>
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="form-line-cont hov1">
           <div class="border-hover-first">
           <label for="name">What's your name?</label>
@@ -28,7 +28,10 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Your name goes here"
+            [(ngModel)]="contactData.name"
+            [placeholder]="placeholderName"
+            (click)="resetInput()"
+            required
           />
         </div>
         </div>
@@ -36,11 +39,15 @@
           <div class="border-hover border-hover-first">
           <label for="email">What's your email?</label>
           <input
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             class="paragraph-no-opacity"
             type="email"
             id="email"
             name="email"
-            placeholder="youremail@email.com"
+            [(ngModel)]="contactData.email"
+            [placeholder]="placeholderEmail"
+            (click)="resetInput()"
+            required
           />
         </div>
         </div>
@@ -51,21 +58,29 @@
             class="paragraph-no-opacity"
             id="message"
             name="message"
-            placeholder="Write something.."
+            [(ngModel)]="contactData.message"
+            [placeholder]="placeholderMessage"
+            (click)="resetInput()"
+            required
           ></textarea>
         </div>
         </div>
         <div class="checkbox-policy-main-cont">
-          <div class="checkbox-cont">
-            <input class="checkbox" type="checkbox" />
-            <span class="checkmark"></span>
+          <div class="checkbox-cont-main">
+            <div class="checkbox-cont">
+              <input class="checkbox" id="checkbox" type="checkbox" required/>
+              <span class="checkmark"></span>
+            </div>
+            <div>
+              <span class="condition">I've read the <a routerLink="/privacy_policy" >privacy policy</a> and agree
+                to the processing of my data as outlined.</span>
+              </div>
           </div>
-          <span
-            >I've read the <a href="privacy policy">privacy policy</a> and agree
-            to the processing of my data as outlined.</span
-          >
-        </div>
-        <div class="input-cont">
+          <span class="error-msg d-none" id="error-msg">
+            Please accept the privacy policy.
+          </span>
+      </div>
+        <div class="input-cont" (click)="checkInput()">
           <input class="submit" type="submit" value=""/>
           <span>Say Hello ;)</span>
         </div>

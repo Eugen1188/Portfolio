@@ -1,0 +1,24 @@
+.main {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .arrow-back {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+    p, ul, h3 {
+        color: white;
+        font-family: 'Karla';
+    }
+    .private-policy-cont {
+        width: 90%;
+        height: 45vh;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

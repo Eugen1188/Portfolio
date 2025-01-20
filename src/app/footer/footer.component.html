@@ -20,7 +20,9 @@
             </svg>
       </div>
       <div class="profession">
-        <span>Web Developer</span>
+        <span *ngIf="language == 'eng'">Web Developer</span>
+        <span *ngIf="language == 'ger'">Web Entwickler</span>
+
         <span>Karlsruhe Germany</span>
       </div>
     </div>
@@ -30,10 +32,11 @@
       <span>© Eugen Ferchow 2025 </span>
     </div>
     <div class="links">
-      <a href="">GitHub</a>
-      <a href="">LinkedIn</a>
-      <a href="">Email</a>
-      <a href="">Legal Notice</a>
+      <div class="link-cont"><div class="circle"></div><a href="">GitHub</a></div>
+      <div class="link-cont"><div class="circle"></div><a href="">LinkedIn</a></div>
+      <div class="link-cont"><div class="circle"></div><a href="">Email</a></div>
+      <div class="link-cont"><div class="circle"></div><a href="">Legal Notice</a></div>
+
     </div>
   </div>
 </div>

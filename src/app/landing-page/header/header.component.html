@@ -1,11 +1,20 @@
 <div class="main-header-cont">
   <nav>
     <div class="choose-lang">
-        <div class="language ger" style="left: -1px">EN</div>
-        <div class="language eng" style="right: 0px">DE</div>
+        <div class="language" style="left: -1px"
+        [class.ger]="selectedLanguage === 'ger'" 
+        [class.eng]="selectedLanguage === 'eng'" 
+        (click)="setLanguage('eng')" >EN
+      </div>
+        <div class="language eng" style="right: -1px"
+        [class.ger]="selectedLanguage === 'eng'" 
+        [class.eng]="selectedLanguage === 'ger'" 
+        (click)="setLanguage('ger')" >DE
+      </div>
     </div>
     <div class="nav-link">
-      <a href="">About me</a>
+      <a *ngIf="language == 'ger'" href="">Über mich</a>
+      <a *ngIf="language == 'eng'" href="">About me</a>
       <div class="circle"></div>
     </div>
     <div class="nav-link">

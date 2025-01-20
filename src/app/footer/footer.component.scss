@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
 }
 
 .footer-main-cont {
@@ -35,8 +34,24 @@
     }
     .links {
         display: flex;
+        align-items: baseline;
         flex-direction: column;
         gap: 8px;
+        .link-cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            &:hover .circle {
+                background-color: rgba(61, 207, 182, 1);
+            }
+            .circle {
+                border-radius: 100%;
+                width: 6.4px;
+                height: 6.4px;
+                background-color: rgba(61, 207, 182, 0);
+            }
+        }
         a {
             text-decoration: none;
             font-family: 'Karla-light';

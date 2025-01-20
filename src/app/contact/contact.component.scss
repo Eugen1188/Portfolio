@@ -2,6 +2,7 @@
   background-color: #1c1c1c;
   display: flex;
   justify-content: center;
+  padding-bottom: 64px;
   .contact-main-cont {
     width: 90%;
     display: flex;
@@ -95,6 +96,10 @@
   }
 }
 
+.input-error::placeholder {
+  color: red;
+}
+
 /* Stile für alle Elemente */
 .border-hover-first,
 .border-hover,
@@ -174,10 +179,12 @@
 }
 
 .checkbox-policy-main-cont {
+  position: relative;
   display: flex;
   gap: 16px;
   color: white;
   font-family: "Karla";
+  flex-direction: column;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
@@ -187,6 +194,19 @@
   height: 131px;
   gap: 16px;
   align-items: center;
+  .error-msg {
+    align-self: flex-start;
+    color: rgba(236, 123, 123, 1);
+    font-family: 'Karla-light';
+    font-size: 14px;
+    line-height: 16.8px;
+    position: absolute;
+    bottom: 5px;
+  }
+  .checkbox-main-cont {
+    display: flex;
+    flex-direction: column;
+  }
   a {
     color: #3dcfb6;
     text-decoration: none;
@@ -215,6 +235,7 @@
         height: 18px;
         border-radius: 4px;
         z-index: 1;
+        align-self: center;
     }
     .checkmark::after {
         content: "✔"; /* Häkchen */
@@ -222,6 +243,19 @@
         color: #3dcfb6;
         background-color: #3dcfb700;
     }   
+  }
+
+  .checkbox-cont-main {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 40px;
+    span {
+      align-self: flex-start;
+    }
+    .condition {
+      margin-left: 8px;
+    }
   }
 
   .checkbox {

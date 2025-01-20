@@ -1,7 +1,5 @@
-<app-landing-page></app-landing-page>
-<app-about-me-section></app-about-me-section>
-<app-technologies-section></app-technologies-section>
-<app-portfolio-section></app-portfolio-section>
-<app-slider></app-slider>
-<app-contact></app-contact>
-<app-footer></app-footer>
+<div class="main">
+    <app-header [language]="language" (languageChange)="onLanguageChange($event)"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer [language]="language"></app-footer>
+</div>
