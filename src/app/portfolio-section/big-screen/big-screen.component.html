@@ -3,9 +3,14 @@
     <div class="project-info-cont" *ngIf="index != null">
       <h1 class="number-project" >{{ index + 1 | number : "2.0" }}</h1>
       <span class="projectname">{{ projects[index].portfolio }}</span>
-      <span class="project-about">What is this project about?</span>
-      <span class="paragraph-no-opacity ">
-        {{ projects[index].description }}
+      <span *ngIf="language.language == 'ger'" class="project-about">Projektbeschreibung</span>
+      <span *ngIf="language.language == 'eng'" class="project-about">What is this project about?</span>
+
+      <span *ngIf="language.language == 'ger'" class="paragraph-no-opacity ">
+        {{ projects[index].descriptionGer }}
+      </span>
+      <span *ngIf="language.language == 'eng'" class="paragraph-no-opacity ">
+        {{ projects[index].descriptionEng }}
       </span>
       <div class="tools-cont">
         <div class="tool" *ngFor="let tool of projects[index].tools">
@@ -27,7 +32,8 @@
         </svg>        
       <img src="assets/img/project_img/{{ index }}.png" alt="" />
       <div class="next-cont" (click)="renderNextProject()">
-        <span>Next project</span>
+        <span *ngIf="language.language == 'ger'">Nächtes Projekt</span>
+        <span *ngIf="language.language == 'eng'">Next project</span>
         <img src="assets/img/arrow_forward.png" alt="">
     </div>
     </div>

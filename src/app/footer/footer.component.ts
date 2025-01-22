@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,6 +10,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  @Input() language!: string;
+
+  language = inject(LanguageService);
 
 }

@@ -4,6 +4,7 @@ import { Component, inject} from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,8 @@ import { Router } from '@angular/router';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  
+  language = inject(LanguageService);
   placeholderNameError: string = "Oops! it seems your name is missing";
   placeholderEmailError: string = "Hoppla! your email is required";
   placeholderMessageError: string = "What do you need to develop?";

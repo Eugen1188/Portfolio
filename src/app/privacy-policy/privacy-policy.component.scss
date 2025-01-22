@@ -7,7 +7,11 @@
     .arrow-back {
         position: absolute;
         top: 24px;
-        right: 24px;
+        right: 120px;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
     }
     p, ul, h3 {
         color: white;

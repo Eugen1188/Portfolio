@@ -1,5 +1,6 @@
-import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { Component, Input, EventEmitter, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-big-screen',
@@ -9,6 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './big-screen.component.scss',
 })
 export class BigScreenComponent {
+  
+  language = inject(LanguageService);
   @Input() index: number | null = null;
   @Input() projects: any[] = [];
   @Input() isVisible: boolean = false;

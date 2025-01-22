@@ -9,7 +9,6 @@ import { SliderComponent } from "./slider/slider.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { RouterLinkActive, RouterModule, RouterOutlet, Routes } from '@angular/router';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { HeaderComponent } from "./landing-page/header/header.component";
 
 @Component({
@@ -21,9 +20,4 @@ import { HeaderComponent } from "./landing-page/header/header.component";
 })
 export class AppComponent {
   title = 'Portfolio';
-  language: string = 'eng';
-
-  onLanguageChange(newLanguage: string): void {
-    this.language = newLanguage;
-  }
 }

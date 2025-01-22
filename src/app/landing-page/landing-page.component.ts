@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { MarqueeComponent } from "./marquee/marquee.component";
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,11 +11,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-    @Input() language!: string; 
-    
-  
+
+    language = inject(LanguageService);
+      
     ngOnInit() {
-      console.log('LandingPage - Current language:', this.language);
+      console.log('LandingPage - Current language:', this.language.language);
     }
   
 

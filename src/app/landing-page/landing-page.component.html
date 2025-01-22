@@ -1,12 +1,12 @@
 <div class="main">
   <div class="me-center">
-    <div *ngIf="language == 'eng'" class="my-work">Frontend Developer</div>
-    <div *ngIf="language == 'ger'" class="my-work">Frontend Entwickler</div>
+    <div *ngIf="language.language == 'eng'" class="my-work">Frontend Developer</div>
+    <div *ngIf="language.language == 'ger'" class="my-work">Frontend Entwickler</div>
 
     <div class="my-name">Eugen Ferchow</div>
     <div class="me-btn-cont">
-      <div class="std-btn"><a href=""></a><span>Check my work</span></div>
-      <div class="std-btn"><a href=""></a><span>Contact me</span></div>
+      <div class="std-btn"><a href="#projects"></a><span *ngIf="language.language == 'ger'">Meine Projekte</span><span *ngIf="language.language == 'eng'">Check my work</span></div>
+      <div class="std-btn"><a href="#contact"></a><span *ngIf="language.language == 'ger'">Kontakt</span><span *ngIf="language.language == 'eng'">Contact me</span></div>
     </div>
   </div>
 

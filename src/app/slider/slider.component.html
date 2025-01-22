@@ -1,6 +1,7 @@
 <div class="main">
 
-  <h2>What my colleagues say about me</h2>
+  <h2 *ngIf="language.language == 'ger'">Was meine Kollegen über mich sagen</h2>
+  <h2 *ngIf="language.language == 'eng'">What my colleagues say about me</h2>
   <div class="slider">
     <div
       class="slider-element"

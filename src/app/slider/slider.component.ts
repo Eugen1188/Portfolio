@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../language.service';
 
 
 @Component({
@@ -11,6 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class SliderComponent {
 
+  language = inject(LanguageService);
   recommendations = [{
     message: 'loremLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren',
     author: 'Max',

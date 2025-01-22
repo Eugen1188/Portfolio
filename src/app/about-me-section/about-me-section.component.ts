@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-about-me-section',
@@ -9,7 +10,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './about-me-section.component.scss'
 })
 export class AboutMeSectionComponent {
-      @Input() language!: string; 
-  
+
+  language = inject(LanguageService);
 
 }

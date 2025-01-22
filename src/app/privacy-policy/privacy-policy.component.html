@@ -1,66 +1,268 @@
 <div class="main">
   <div class="private-policy-cont">
     <div class="arrow-back">
-      <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.83044 11L10.7228 17.8923C10.921 18.0905 11.0189 18.3225 11.0164 18.5883C11.0138 18.8541 10.9091 19.0904 10.7024 19.2973C10.4956 19.4904 10.2613 19.5904 9.99977 19.5973C9.73822 19.6042 9.504 19.5042 9.29711 19.2973L0.843441 10.8437C0.718552 10.7188 0.630552 10.5871 0.579441 10.4487C0.528108 10.3102 0.502441 10.1607 0.502441 9.99999C0.502441 9.83932 0.528108 9.68977 0.579441 9.55132C0.630552 9.41288 0.718552 9.28121 0.843441 9.15632L9.29711 0.702658C9.48178 0.517992 9.71044 0.423547 9.98311 0.419325C10.2558 0.415103 10.4956 0.509547 10.7024 0.702658C10.9091 0.909547 11.0124 1.1471 11.0124 1.41533C11.0124 1.68377 10.9091 1.92143 10.7024 2.12832L3.83044 8.99999H18.9998C19.2836 8.99999 19.5211 9.09577 19.7124 9.28732C19.904 9.47866 19.9998 9.71621 19.9998 9.99999C19.9998 10.2838 19.904 10.5213 19.7124 10.7127C19.5211 10.9042 19.2836 11 18.9998 11H3.83044Z" fill="#3DCFB6"/>
+      <a href=""
+        ><svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.83044 11L10.7228 17.8923C10.921 18.0905 11.0189 18.3225 11.0164 18.5883C11.0138 18.8541 10.9091 19.0904 10.7024 19.2973C10.4956 19.4904 10.2613 19.5904 9.99977 19.5973C9.73822 19.6042 9.504 19.5042 9.29711 19.2973L0.843441 10.8437C0.718552 10.7188 0.630552 10.5871 0.579441 10.4487C0.528108 10.3102 0.502441 10.1607 0.502441 9.99999C0.502441 9.83932 0.528108 9.68977 0.579441 9.55132C0.630552 9.41288 0.718552 9.28121 0.843441 9.15632L9.29711 0.702658C9.48178 0.517992 9.71044 0.423547 9.98311 0.419325C10.2558 0.415103 10.4956 0.509547 10.7024 0.702658C10.9091 0.909547 11.0124 1.1471 11.0124 1.41533C11.0124 1.68377 10.9091 1.92143 10.7024 2.12832L3.83044 8.99999H18.9998C19.2836 8.99999 19.5211 9.09577 19.7124 9.28732C19.904 9.47866 19.9998 9.71621 19.9998 9.99999C19.9998 10.2838 19.904 10.5213 19.7124 10.7127C19.5211 10.9042 19.2836 11 18.9998 11H3.83044Z"
+            fill="#3DCFB6"
+          />
         </svg>
-        </a>
+      </a>
     </div>
-    <h1>Datenschutzerklärung</h1>
+    <!-- Deutsch Version -->
+    <h1 *ngIf="language.language == 'ger'">Datenschutzerklärung</h1>
+    <h1 *ngIf="language.language == 'eng'">Privacy Policy</h1>
 
-    <h2>1. Einleitung</h2>
-    <p>Ich, <strong>Eugen Ferchow</strong> (im Folgenden „ich“ oder „mein“), respektiere deine Privatsphäre und verpflichte mich, deine personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erklärt, wie ich deine personenbezogenen Daten sammle, verwende, speichere und schütze, wenn du meine Website <strong>[www.deinewebsite.com]</strong> besuchst.</p>
-    <p>Bitte lies diese Datenschutzerklärung sorgfältig, um zu verstehen, wie ich mit deinen personenbezogenen Daten umgehe.</p>
+    <!-- Einleitung -->
+    <h2 *ngIf="language.language == 'ger'">1. Einleitung</h2>
+    <h2 *ngIf="language.language == 'eng'">1. Introduction</h2>
 
-    <h2>2. Erhebung und Verwendung personenbezogener Daten</h2>
-    <p>Ich erhebe und verwende deine personenbezogenen Daten nur, wenn dies gesetzlich erlaubt ist oder du mir dazu deine ausdrückliche Zustimmung gegeben hast.</p>
+    <p *ngIf="language.language == 'ger'">
+      Ich, <strong>Eugen Ferchow</strong> (im Folgenden „ich“ oder „mein“),
+      respektiere deine Privatsphäre und verpflichte mich, deine
+      personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erklärt,
+      wie ich deine personenbezogenen Daten sammle, verwende, speichere und
+      schütze, wenn du meine Website
+      <strong>[www.deinewebsite.com]</strong> besuchst.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I, <strong>Eugen Ferchow</strong> (hereinafter referred to as "I" or
+      "my"), respect your privacy and commit to protecting your personal data.
+      This privacy policy explains how I collect, use, store, and protect your
+      personal data when you visit my website
+      <strong>[www.yourwebsite.com]</strong>.
+    </p>
 
-    <h3>a) Erhobene Daten</h3>
-    <p>Ich erhebe die folgenden personenbezogenen Daten:</p>
+    <p *ngIf="language.language == 'ger'">
+      Bitte lies diese Datenschutzerklärung sorgfältig, um zu verstehen, wie ich
+      mit deinen personenbezogenen Daten umgehe.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      Please read this privacy policy carefully to understand how I handle your
+      personal data.
+    </p>
+
+    <!-- Erhebung und Verwendung personenbezogener Daten -->
+    <h2 *ngIf="language.language == 'ger'">
+      2. Erhebung und Verwendung personenbezogener Daten
+    </h2>
+    <h2 *ngIf="language.language == 'eng'">
+      2. Collection and Use of Personal Data
+    </h2>
+    <p *ngIf="language.language == 'ger'">
+      Ich erhebe und verwende deine personenbezogenen Daten nur, wenn dies
+      gesetzlich erlaubt ist oder du mir dazu deine ausdrückliche Zustimmung
+      gegeben hast.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I only collect and use your personal data when it is legally permitted or
+      you have given me your explicit consent.
+    </p>
+
+    <!-- Erhobene Daten -->
+    <h3 *ngIf="language.language == 'ger'">a) Erhobene Daten</h3>
+    <h3 *ngIf="language.language == 'eng'">a) Collected Data</h3>
+    <p *ngIf="language.language == 'ger'">
+      Ich erhebe die folgenden personenbezogenen Daten:
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I collect the following personal data:
+    </p>
     <ul>
-        <li><strong>Kontaktdaten</strong>: Name, E-Mail-Adresse, Telefonnummer</li>
-        <li><strong>Technische Daten</strong>: IP-Adresse, Browser-Typ, besuchte Seiten</li>
-        <li><strong>Formulardaten</strong>: Inhalte, die du über Formulare (z. B. Kontaktformular) auf meiner Website übermittelst</li>
+      <li *ngIf="language.language == 'ger'">
+        <strong>Kontaktdaten</strong>: Name, E-Mail-Adresse, Telefonnummer
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        <strong>Contact Data</strong>: Name, email address, phone number
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        <strong>Technische Daten</strong>: IP-Adresse, Browser-Typ, besuchte
+        Seiten
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        <strong>Technical Data</strong>: IP address, browser type, visited pages
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        <strong>Formulardaten</strong>: Inhalte, die du über Formulare (z. B.
+        Kontaktformular) auf meiner Website übermittelst
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        <strong>Form Data</strong>: Content you submit through forms (e.g.,
+        contact form) on my website
+      </li>
     </ul>
 
-    <h3>b) Zwecke der Datenerhebung</h3>
-    <p>Die erhobenen Daten werden für folgende Zwecke verwendet:</p>
+    <!-- Zwecke der Datenerhebung -->
+    <h3 *ngIf="language.language == 'ger'">b) Zwecke der Datenerhebung</h3>
+    <h3 *ngIf="language.language == 'eng'">b) Purpose of Data Collection</h3>
+    <p *ngIf="language.language == 'ger'">
+      Die erhobenen Daten werden für folgende Zwecke verwendet:
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      The collected data will be used for the following purposes:
+    </p>
     <ul>
-        <li>Um deine Anfragen zu beantworten und mit dir zu kommunizieren</li>
-        <li>Um dir den Zugang zu meinen Dienstleistungen oder Funktionen zu ermöglichen</li>
-        <li>Zur Verbesserung meiner Website und meiner Dienstleistungen</li>
+      <li *ngIf="language.language == 'ger'">
+        Um deine Anfragen zu beantworten und mit dir zu kommunizieren
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        To respond to your inquiries and communicate with you
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Um dir den Zugang zu meinen Dienstleistungen oder Funktionen zu
+        ermöglichen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        To enable you to access my services or features
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Zur Verbesserung meiner Website und meiner Dienstleistungen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        To improve my website and services
+      </li>
     </ul>
 
-    <h2>3. Cookies</h2>
-    <p>Meine Website verwendet Cookies, um das Nutzererlebnis zu verbessern. Cookies sind kleine Textdateien, die auf deinem Gerät gespeichert werden. Sie helfen mir, deine Nutzung meiner Website zu analysieren und dir eine personalisierte Erfahrung zu bieten.</p>
-    <p>Du kannst die Verwendung von Cookies in deinen Browsereinstellungen deaktivieren. Beachte jedoch, dass dies einige Funktionen meiner Website beeinträchtigen kann.</p>
+    <h2 *ngIf="language.language == 'ger'">3. Cookies</h2>
+    <h2 *ngIf="language.language == 'eng'">3. Cookies</h2>
+    <p *ngIf="language.language == 'ger'">
+      Meine Website verwendet Cookies, um das Nutzererlebnis zu verbessern.
+      Cookies sind kleine Textdateien, die auf deinem Gerät gespeichert werden.
+      Sie helfen mir, deine Nutzung meiner Website zu analysieren und dir eine
+      personalisierte Erfahrung zu bieten.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      My website uses cookies to enhance the user experience. Cookies are small
+      text files stored on your device. They help me analyze your usage of my
+      website and provide a personalized experience.
+    </p>
 
-    <h2>4. Weitergabe von Daten</h2>
-    <p>Ich gebe deine personenbezogenen Daten nicht ohne deine ausdrückliche Zustimmung an Dritte weiter, es sei denn, dies ist gesetzlich erforderlich oder zur Erfüllung eines Vertrags erforderlich (z. B. an Zahlungsdienstleister).</p>
+    <p *ngIf="language.language == 'ger'">
+      Du kannst die Verwendung von Cookies in deinen Browsereinstellungen
+      deaktivieren. Beachte jedoch, dass dies einige Funktionen meiner Website
+      beeinträchtigen kann.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      You can disable the use of cookies in your browser settings. However,
+      please note that this may affect some features of my website.
+    </p>
 
-    <h2>5. Sicherheit der Daten</h2>
-    <p>Ich habe geeignete technische und organisatorische Maßnahmen ergriffen, um deine personenbezogenen Daten vor Verlust, Missbrauch oder unbefugtem Zugriff zu schützen. Ich speichere deine Daten nur so lange, wie es für die Erfüllung der Zwecke notwendig ist, für die sie erhoben wurden.</p>
+    <h2 *ngIf="language.language == 'ger'">4. Weitergabe von Daten</h2>
+    <h2 *ngIf="language.language == 'eng'">4. Data Sharing</h2>
+    <p *ngIf="language.language == 'ger'">
+      Ich gebe deine personenbezogenen Daten nicht ohne deine ausdrückliche
+      Zustimmung an Dritte weiter, es sei denn, dies ist gesetzlich erforderlich
+      oder zur Erfüllung eines Vertrags erforderlich (z. B. an
+      Zahlungsdienstleister).
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I do not share your personal data with third parties without your explicit
+      consent, unless required by law or necessary to fulfill a contract (e.g.,
+      to payment service providers).
+    </p>
 
-    <h2>6. Deine Rechte</h2>
-    <p>Du hast das Recht:</p>
+    <h2 *ngIf="language.language == 'ger'">5. Sicherheit der Daten</h2>
+    <h2 *ngIf="language.language == 'eng'">5. Data Security</h2>
+    <p *ngIf="language.language == 'ger'">
+      Ich habe geeignete technische und organisatorische Maßnahmen ergriffen, um
+      deine personenbezogenen Daten vor Verlust, Missbrauch oder unbefugtem
+      Zugriff zu schützen. Ich speichere deine Daten nur so lange, wie es für
+      die Erfüllung der Zwecke notwendig ist, für die sie erhoben wurden.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I have taken appropriate technical and organizational measures to protect
+      your personal data from loss, misuse, or unauthorized access. I only store
+      your data as long as necessary to fulfill the purposes for which they were
+      collected.
+    </p>
+
+    <h2 *ngIf="language.language == 'ger'">6. Deine Rechte</h2>
+    <h2 *ngIf="language.language == 'eng'">6. Your Rights</h2>
+    <p *ngIf="language.language == 'ger'">Du hast das Recht:</p>
+    <p *ngIf="language.language == 'eng'">You have the right to:</p>
     <ul>
-        <li>Auskunft über die personenbezogenen Daten, die ich über dich gespeichert habe, zu verlangen</li>
-        <li>Die Berichtigung oder Löschung deiner personenbezogenen Daten zu verlangen</li>
-        <li>Die Einschränkung der Verarbeitung deiner Daten zu verlangen</li>
-        <li>Der Verarbeitung deiner personenbezogenen Daten zu widersprechen</li>
-        <li>Deine Zustimmung zur Verarbeitung deiner personenbezogenen Daten jederzeit zu widerrufen</li>
+      <li *ngIf="language.language == 'ger'">
+        Auskunft über die personenbezogenen Daten, die ich über dich gespeichert
+        habe, zu verlangen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        Request information about the personal data I have stored about you
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Die Berichtigung oder Löschung deiner personenbezogenen Daten zu
+        verlangen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        Request the correction or deletion of your personal data
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Die Einschränkung der Verarbeitung deiner Daten zu verlangen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        Request restriction of the processing of your data
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Der Verarbeitung deiner personenbezogenen Daten zu widersprechen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        Object to the processing of your personal data
+      </li>
+      <li *ngIf="language.language == 'ger'">
+        Deine Zustimmung zur Verarbeitung deiner personenbezogenen Daten
+        jederzeit zu widerrufen
+      </li>
+      <li *ngIf="language.language == 'eng'">
+        Withdraw your consent to the processing of your personal data at any
+        time
+      </li>
     </ul>
-    <p>Wenn du eines dieser Rechte ausüben möchtest, kannst du dich über die Kontaktinformationen am Ende dieser Datenschutzerklärung an mich wenden.</p>
+    <p *ngIf="language.language == 'ger'">
+      Wenn du eines dieser Rechte ausüben möchtest, kannst du dich über die
+      Kontaktinformationen am Ende dieser Datenschutzerklärung an mich wenden.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      If you wish to exercise any of these rights, you can contact me using the
+      contact information at the end of this privacy policy.
+    </p>
 
-    <h2>7. Änderungen der Datenschutzerklärung</h2>
-    <p>Ich behalte mir das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Alle Änderungen werden auf dieser Seite veröffentlicht. Bitte prüfe die Datenschutzerklärung regelmäßig, um sicherzustellen, dass du über die aktuellen Bestimmungen informiert bist.</p>
+    <h2 *ngIf="language.language == 'ger'">
+      7. Änderungen der Datenschutzerklärung
+    </h2>
+    <h2 *ngIf="language.language == 'eng'">7. Changes to the Privacy Policy</h2>
+    <p *ngIf="language.language == 'ger'">
+      Ich behalte mir das Recht vor, diese Datenschutzerklärung jederzeit zu
+      ändern. Alle Änderungen werden auf dieser Seite veröffentlicht. Bitte
+      prüfe die Datenschutzerklärung regelmäßig, um sicherzustellen, dass du
+      über die aktuellen Bestimmungen informiert bist.
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      I reserve the right to change this privacy policy at any time. All changes
+      will be published on this page. Please check the privacy policy regularly
+      to ensure you are informed about the latest provisions.
+    </p>
 
-    <h2>8. Kontakt</h2>
-    <p>Wenn du Fragen zur Verarbeitung deiner personenbezogenen Daten oder zu dieser Datenschutzerklärung hast, kannst du dich jederzeit an mich wenden:</p>
-    <p><strong>Eugen Ferchow</strong><br>
-    E-Mail: [Eugen.ferchow&#64;gmx.de]<br>
-    Adresse: [Deine Adresse]<br>
-    Telefon: [Deine Telefonnummer]</p>
-
+    <h2 *ngIf="language.language == 'ger'">8. Kontakt</h2>
+    <h2 *ngIf="language.language == 'eng'">8. Contact</h2>
+    <p *ngIf="language.language == 'ger'">
+      Wenn du Fragen zur Verarbeitung deiner personenbezogenen Daten oder zu
+      dieser Datenschutzerklärung hast, kannst du dich jederzeit an mich wenden:
+    </p>
+    <p *ngIf="language.language == 'eng'">
+      If you have any questions about the processing of your personal data or
+      this privacy policy, you can contact me at any time:
+    </p>
+    <p>
+      <strong>Eugen Ferchow</strong><br />
+      E-Mail: [Eugen.ferchow&#64;gmx.de]<br />
+      Adresse: [Deine Adresse]<br />
+      Telefon: [Deine Telefonnummer]
+    </p>
   </div>
 </div>

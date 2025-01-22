@@ -1,13 +1,17 @@
-<div class="main">
+<div class="main" id="projects">
   <div class="portfolio-section">
     <div class="portfolio-cont">
       <span class="small-headline">Portfolio</span>
-      <h1>Featured Projects</h1>
+      <h1 *ngIf="language.language == 'ger'">Projekte</h1>
+      <h1 *ngIf="language.language == 'eng'">Featured Projects</h1>
+
       <div class="help-cont">
-        <span class="paragraph-no-opacity"
+        <span *ngIf="language.language == 'ger'" class="paragraph-no-opacity"
+          >Entdecken Sie hier eine Auswahl meiner Arbeiten und interagieren Sie mit meinen Projekten,
+          um meine Fähigkeiten in Aktion zu erleben.</span>
+          <span *ngIf="language.language == 'eng'" class="paragraph-no-opacity"
           >Explore a selection of my work here - Interact with projects to see
-          my skills in action.</span
-        >
+          my skills in action.</span>
       </div>
       <div class="table-portfolioview-cont">
         <table style="width: 100%">
