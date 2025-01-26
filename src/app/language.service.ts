@@ -8,5 +8,5 @@ export class LanguageService {
   constructor() { }
 
   language: string = 'eng';
-
+  isOpen: boolean = false;
 }

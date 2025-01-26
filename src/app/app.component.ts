@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // import { RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from "./landing-page/landing-page.component";
@@ -10,6 +10,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { RouterLinkActive, RouterModule, RouterOutlet, Routes } from '@angular/router';
 import { HeaderComponent } from "./landing-page/header/header.component";
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-root',
@@ -20,4 +21,6 @@ import { HeaderComponent } from "./landing-page/header/header.component";
 })
 export class AppComponent {
   title = 'Portfolio';
+
+  hiddeBackground = inject(LanguageService);
 }

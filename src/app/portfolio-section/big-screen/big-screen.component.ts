@@ -12,6 +12,7 @@ import { LanguageService } from '../../language.service';
 export class BigScreenComponent {
   
   language = inject(LanguageService);
+  hiddenBackground = inject(LanguageService);
   @Input() index: number | null = null;
   @Input() projects: any[] = [];
   @Input() isVisible: boolean = false;
@@ -29,6 +30,7 @@ export class BigScreenComponent {
 
   closeScreen() {
     this.isVisible = false;
+    this.hiddenBackground.isOpen = false;
     this.isVisibleChange.emit(this.isVisible);
     if (this.index != null) {
       this.renderIndex.emit(this.index);

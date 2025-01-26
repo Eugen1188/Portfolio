@@ -10,7 +10,13 @@
   align-items: center;
   z-index: 1000;
   .projekt-screen-cont {
-    width: 1248px;
+    @media (max-width: 960px) {
+      flex-flow: column-reverse;
+      height: auto;
+      padding: 20px 0px 20px 0px;
+      gap: 32px;
+    }
+    width: 95%;
     height: 656px;
     background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
     border: 1px solid #3dcfb6;
@@ -26,10 +32,30 @@
       justify-content: space-between;
       height: 100%;
       width: 50%;
+      @media (max-width: 960px) {
+        gap: 24px;
+        width: 65%;
+      }
+      @media (max-width: 560px) {
+        width: 90%;
+      }
+      .next-cont-mobile {
+        display: none;
+        cursor: pointer;
+        @media (max-width: 960px) {
+          display: flex;
+          place-self: flex-end;
+          color: #3dcfb6;
+          gap: 10px;
+        }
+      }
       .project-buttons-cont {
         display: flex;
         width: 60%;
         justify-content: space-between;
+        @media (max-width: 960px) {
+          width: 100%;
+        }
         img {
           margin-left: 4px;
           transition: transform 0.1s ease;
@@ -43,6 +69,10 @@
         letter-spacing: -0.02em;
         text-align: left;
         text-decoration-skip-ink: none;
+        @media (max-width: 960px) {
+          font-size: 72px;
+          line-height: 72px;
+        }
       }
       .projectname {
         font-family: "Fira";
@@ -53,6 +83,10 @@
         text-align: left;
         text-decoration-skip-ink: none;
         color: white;
+        @media (max-width: 960px) {
+          font-size: 56px;
+          line-height: 44.8px;
+        }
       }
       .project-about {
         font-family: "Fira";
@@ -62,6 +96,10 @@
         text-align: left;
         text-decoration-skip-ink: none;
         color: #3dcfb6;
+        @media (max-width: 960px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
       }
       .tools-cont {
         display: flex;
@@ -74,10 +112,16 @@
         text-decoration-skip-ink: none;
         color: white;
         gap: 16px;
+        @media (max-width: 360px) {
+          gap: 8px;
+        }
         .tool {
           display: flex;
           align-items: center;
           gap: 8px;
+          @media (max-width: 360px) {
+            gap: 4px;
+          }
         }
       }
     }
@@ -90,6 +134,23 @@
     justify-content: space-between;
     align-items: self-end;
     width: 50%;
+    @media (max-width: 960px) {
+      width: auto;
+      gap: 20px;
+    }
+    
+    .project-big-screen {
+      @media (max-width: 1220px) {
+        width: 400px;
+      }
+      @media (max-width: 960px) {
+        width: 342px;
+      }
+      @media (max-width: 380px) {
+        width: 280px;
+      }
+      
+    }
     .close_img {
       cursor: pointer;
       transition: 0.3s;
@@ -106,6 +167,9 @@
         }
     }
     .next-cont {
+      @media (max-width: 960px) {
+        display: none;
+      }
       display: flex;
       align-items: center;
       cursor: pointer;

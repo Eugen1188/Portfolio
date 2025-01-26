@@ -1,13 +1,14 @@
 <div class="main" id="about-me">
   <div class="me-section">
+
     <div class="picure-cont">
       <img class="green-lines" src="assets/img/green_lines.png" alt="" />
       <img class="me-picture" src="assets/img/me.png" alt="" />
     </div>
 
     <div class="about-me-cont">
-      <span *ngIf="language.language == 'ger'" class="small-headline">Wer ich bin</span>
-      <span *ngIf="language.language == 'eng'" class="small-headline">Who I Am</span>
+      <span *ngIf="language.language == 'ger'" class="small-headline mobile-set">Wer ich bin</span>
+      <span *ngIf="language.language == 'eng'" class="small-headline mobile-set">Who I Am</span>
       <div class="about-me">
         <h1 *ngIf="language.language == 'eng'">About me</h1>
         <h1 *ngIf="language.language == 'ger'">Über mich</h1>

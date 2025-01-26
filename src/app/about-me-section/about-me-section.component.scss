@@ -1,9 +1,13 @@
 .main {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #1c1c1c;
+    overflow: hidden;
+    @media (max-width: 1280px) {
+      height: auto
+    }
   }
   
   .me-section {
@@ -13,20 +17,46 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 144px;
     overflow: visible;
+    @media (max-width: 1280px) {
+      height: auto;
+      gap: 40px;
+      flex-direction: column;
+      width:fit-content;
+      padding-top: 100px;
+      margin-bottom: 50px;
+
+    }
     .picure-cont {
       position: relative;
       width: 568px;
       height: 568px;
+      @media (max-width: 600px) {
+        display: flex;
+        justify-content: center;  
+        height: unset;      
+      }
       .me-picture {
         position: relative;
+        border-radius: 30px;
+        filter: grayscale(1);
+        @media (max-width: 600px) {
+          width: 358px;
+          height: 358px;
+        }
+        @media (max-width: 380px) {
+          width: 300px;
+          height: 300px;
+        }
       }
       .green-lines {
         position: absolute;
         top: 0;
         left: 0;
         transition: transform 0.2s ease-in-out;
+        @media (max-width: 600px) {
+          display: none;
+        }
       }
       &:hover .green-lines {
         transform: translate(-35px, 35px);
@@ -39,6 +69,17 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    @media (max-width: 1280px) {
+      align-self: unset;
+    }
+    .mobile-set {
+      @media (max-width: 600px) {
+        margin-left: 104px;
+      }
+      @media (max-width: 380px) {
+        margin-left: 134px;
+      }
+    }
     .about-me {
       margin-top: 20px;
       background-color: #3DCFB61A;
@@ -48,6 +89,13 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
+      @media (max-width: 600px) {
+        width: 292px;
+        place-self: center;
+      }
+      @media (max-width: 380px) {
+        width: 234px;
+      }
       .description-cont {
         display: grid;
         gap: 32px;
@@ -65,6 +113,9 @@
           color: #FFFFFF;
           opacity: 0.8;
           margin-left: 24px;
+          @media (max-width: 380px) {
+            font-size: 16px;
+          }
         }
       }
     }

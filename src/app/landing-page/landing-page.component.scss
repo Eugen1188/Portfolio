@@ -26,6 +26,9 @@
     height: 48px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 450px) {
+        justify-content: space-evenly;
+      }
 }
 
 
@@ -41,7 +44,10 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    left: 111px
+    left: 112px;
+    @media (max-width: 1100px) {
+        left: 40px;
+    }
 }
 
 .round {
@@ -109,6 +115,16 @@
     line-height: 40px;
     font-weight: 400;
     color: #D9D9D9;
+    @media (max-width: 1180px) {
+        font-size: 24px;
+      }
+      @media (max-width: 880px) {
+        line-height: 24px;
+      }
+      @media (max-width: 450px) {
+        font-size: 18px;
+    }
+
 }
 
 .my-name {
@@ -118,6 +134,18 @@
     font-weight: 700;
     color: #D9D9D9;
     margin-top: 12px;
+    @media (max-width: 1180px) {
+        font-size: 100px;
+    }
+    @media (max-width: 880px) {
+        font-size: 62px;
+        line-height: 62px;
+    }
+    @media (max-width: 450px) {
+        font-size: 40px;
+        line-height: 40px;
+
+    }
 }
 
 .lat-right {
@@ -141,6 +169,9 @@
     bottom: 0;
     right: 112px;
     gap: 24px;
+    @media (max-width: 1100px) {
+        right: 40px;
+    }
     .myemail:hover {
         color: #3DCFB6;
     }
@@ -160,6 +191,9 @@
     span {
         transform: rotate(-90deg);
         margin-bottom: 90px;
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 }
 

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80vh;
     overflow: hidden;
+    padding-top: 100px;
     .portfolio-section {
         width: 90%;
         .portfolio-cont {
@@ -16,10 +16,13 @@
         .help-cont {
             width: 456px;
             height: 44px;
+            @media (max-width: 600px) {
+                width: auto;
+                height: auto;
+              }
         }
     }
 }
-
 tr {
     width: 880px;
     display: flex;
@@ -27,6 +30,15 @@ tr {
     align-items: center;
     border-bottom: 1px solid rgba(61, 207, 182, 1);
     padding: 40px 32px;
+    @media (max-width: 1050px) {
+        width: auto;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+      }
     .project-name-cont {
         display: flex;
     }

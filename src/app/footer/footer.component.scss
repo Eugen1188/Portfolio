@@ -3,6 +3,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+    @media (max-width: 600px) {
+        flex-direction: column;        
+    }
+    .footer-mobile-set {
+        font-family: 'Fira-light';
+        color: #3DCFB6;
+        font-size: 18px;
+        display: none;
+        @media (max-width: 600px) {
+            display: flex;
+            
+        }
+    }
 }
 
 .footer-main-cont {
@@ -31,6 +45,9 @@
         font-family: 'Fira-light';
         color: #3DCFB6;
         font-size: 18px;
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
     .links {
         display: flex;

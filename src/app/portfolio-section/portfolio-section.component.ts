@@ -13,6 +13,7 @@ import { LanguageService } from '../language.service';
 export class PortfolioSectionComponent {
 
   language = inject(LanguageService);
+  hiddeBackground = inject(LanguageService);
   projects = [
     {
       portfolio: 'Join',
@@ -52,6 +53,7 @@ export class PortfolioSectionComponent {
   onDivClick(i: number) {
     this.isVisible = true;
     this.selectedIndex = i;
+    this.hiddeBackground.isOpen = true;
     console.log('ondivclickindex' + this.selectedIndex);
 
   }

@@ -117,7 +117,7 @@
       />
     </svg>
   </div>
-  <div class="menu-mobile">
+  <div class="menu-mobile" (click)="openMenu()">
     <svg
       width="32"
       height="22"
@@ -133,11 +133,11 @@
   </div>
 </div>
 
-<div class="mobile-main-cont">
+<div class="mobile-main-cont" [class.d-none]="!isVisible" (click)="closeScreen()">
   <div class="menu-mobile-cont">
-    <div class="mobile-link-cont"><a href="">About me</a></div>
-    <div class="mobile-link-cont"><a href="">Skills</a></div>
-    <div class="mobile-link-cont"><a href="">Projects</a></div>
+    <div class="mobile-link-cont"><a href="#about-me">About me</a></div>
+    <div class="mobile-link-cont"><a href="#technology">Skills</a></div>
+    <div class="mobile-link-cont"><a href="#projects">Projects</a></div>
     <div>
       <div class="choose-lang">
         <div

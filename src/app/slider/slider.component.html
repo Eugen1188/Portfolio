@@ -10,7 +10,7 @@
       [ngStyle]="getSlideStyle(index)"
     >
       <div class="slide-content"> 
-          <img class="quotes" src="assets/img/quotes.png" alt="">
+          <img *ngIf="currentSlide == index + 1" class="quotes" src="assets/img/quotes.png" alt="">
           <span class="paragraph-no-opacity">{{ recommendations[index].message }}</span>
           <div class="author-cont">
             <div class="bar"></div>
