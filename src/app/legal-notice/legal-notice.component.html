@@ -1,8 +1,8 @@
 <div class="main">
   <div class="private-policy-cont">
     <div class="arrow-back">
-      <a href=""
-        ><svg
+      <a href="" class="arrow-back-link">
+        <svg
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -16,124 +16,82 @@
         </svg>
       </a>
     </div>
-    <h1 *ngIf="language.language == 'ger'">Impressum</h1>
-    <h1 *ngIf="language.language == 'eng'">Imprint</h1>
+    <h1 class="policy-title" *ngIf="language.language == 'ger'">Impressum</h1>
+    <h1 class="policy-title" *ngIf="language.language == 'eng'">Imprint</h1>
 
-    <h2 *ngIf="language.language == 'ger'">1. Anbieter</h2>
-    <h2 *ngIf="language.language == 'eng'">1. Provider</h2>
-    <p *ngIf="language.language == 'ger'">Diese Website wird betrieben von:</p>
-    <p *ngIf="language.language == 'eng'">This website is operated by:</p>
-    <p>
+    <h2 class="section-title" *ngIf="language.language == 'ger'">1. Anbieter</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">1. Provider</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">Diese Website wird betrieben von:</p>
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">This website is operated by:</p>
+    <p class="provider-info">
       <strong>Eugen Ferchow</strong><br />
       Adresse: [Deine Adresse]<br />
       E-Mail: [Eugen.ferchow&#64;gmx.de]<br />
-      Telefon: [Deine Telefonnummer]
+        </p>
+
+    <h2 class="section-title" *ngIf="language.language == 'ger'">2. Verantwortlich für den Inhalt</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">2. Responsible for Content</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Der Inhalt dieser Website wird von <strong>Eugen Ferchow</strong> bereitgestellt. Alle Informationen auf dieser Website dienen ausschließlich allgemeinen Informationszwecken und sind nicht als rechtliche Beratung zu verstehen.
+    </p>
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      The content of this website is provided by <strong>Eugen Ferchow</strong>. All information on this website is for general informational purposes only and should not be construed as legal advice.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">2. Verantwortlich für den Inhalt</h2>
-    <h2 *ngIf="language.language == 'eng'">2. Responsible for Content</h2>
-    <p *ngIf="language.language == 'ger'">
-      Der Inhalt dieser Website wird von
-      <strong>Eugen Ferchow</strong> bereitgestellt. Alle Informationen auf
-      dieser Website dienen ausschließlich allgemeinen Informationszwecken und
-      sind nicht als rechtliche Beratung zu verstehen.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">3. Haftungsausschluss</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">3. Disclaimer</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Dennoch kann keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernommen werden. Jegliche Haftung für Schäden, die direkt oder indirekt aus der Nutzung dieser Website entstehen, wird ausgeschlossen, soweit diese nicht auf Vorsatz oder grober Fahrlässigkeit beruhen.
     </p>
-    <p *ngIf="language.language == 'eng'">
-      The content of this website is provided by <strong>Eugen Ferchow</strong>.
-      All information on this website is for general informational purposes only
-      and should not be construed as legal advice.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      The content of this website has been created with the utmost care. However, no guarantee is made regarding the accuracy, completeness, or currentness of the content. Any liability for damages arising directly or indirectly from the use of this website is excluded, unless caused by intent or gross negligence.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">3. Haftungsausschluss</h2>
-    <h2 *ngIf="language.language == 'eng'">3. Disclaimer</h2>
-    <p *ngIf="language.language == 'ger'">
-      Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Dennoch
-      kann keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der
-      Inhalte übernommen werden. Jegliche Haftung für Schäden, die direkt oder
-      indirekt aus der Nutzung dieser Website entstehen, wird ausgeschlossen,
-      soweit diese nicht auf Vorsatz oder grober Fahrlässigkeit beruhen.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">4. Externe Links</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">4. External Links</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Diese Website enthält Links zu externen Webseiten Dritter. Auf den Inhalt dieser Seiten habe ich keinen Einfluss, weshalb ich für den Inhalt der verlinkten Seiten keine Verantwortung übernehmen kann. Für den Inhalt der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
     </p>
-    <p *ngIf="language.language == 'eng'">
-      The content of this website has been created with the utmost care.
-      However, no guarantee is made regarding the accuracy, completeness, or
-      currentness of the content. Any liability for damages arising directly or
-      indirectly from the use of this website is excluded, unless caused by
-      intent or gross negligence.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      This website contains links to external websites of third parties. I have no influence on the content of these sites and therefore cannot accept any responsibility for the content of the linked sites. The respective provider or operator of the sites is always responsible for the content of the linked pages.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">4. Externe Links</h2>
-    <h2 *ngIf="language.language == 'eng'">4. External Links</h2>
-    <p *ngIf="language.language == 'ger'">
-      Diese Website enthält Links zu externen Webseiten Dritter. Auf den Inhalt
-      dieser Seiten habe ich keinen Einfluss, weshalb ich für den Inhalt der
-      verlinkten Seiten keine Verantwortung übernehmen kann. Für den Inhalt der
-      verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-      Seiten verantwortlich.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">5. Urheberrecht</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">5. Copyright</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
     </p>
-    <p *ngIf="language.language == 'eng'">
-      This website contains links to external websites of third parties. I have
-      no influence on the content of these sites and therefore cannot accept any
-      responsibility for the content of the linked sites. The respective
-      provider or operator of the sites is always responsible for the content of
-      the linked pages.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      The content and works published on this website are subject to German copyright law. If the content on this site was not created by the operator, the copyrights of third parties are respected. Contributions by third parties are marked as such. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">5. Urheberrecht</h2>
-    <h2 *ngIf="language.language == 'eng'">5. Copyright</h2>
-    <p *ngIf="language.language == 'ger'">
-      Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem
-      deutschen Urheberrecht. Soweit die Inhalte auf dieser Seite nicht vom
-      Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
-      Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung,
-      Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen
-      des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen
-      Autors bzw. Erstellers.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">6. Datenschutz</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">6. Data Protection</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Die Verarbeitung personenbezogener Daten auf dieser Website erfolgt gemäß der Datenschutzerklärung. Weitere Informationen zum Datenschutz findest du in der Datenschutzerklärung am Anfang dieser Seite.
     </p>
-    <p *ngIf="language.language == 'eng'">
-      The content and works published on this website are subject to German
-      copyright law. If the content on this site was not created by the
-      operator, the copyrights of third parties are respected. Contributions by
-      third parties are marked as such. Reproduction, editing, distribution, and
-      any kind of exploitation outside the limits of copyright require the
-      written consent of the respective author or creator.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      The processing of personal data on this website is carried out in accordance with the privacy policy. For more information about data protection, please refer to the privacy policy at the beginning of this page.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">6. Datenschutz</h2>
-    <h2 *ngIf="language.language == 'eng'">6. Data Protection</h2>
-    <p *ngIf="language.language == 'ger'">
-      Die Verarbeitung personenbezogener Daten auf dieser Website erfolgt gemäß
-      der Datenschutzerklärung. Weitere Informationen zum Datenschutz findest du
-      in der Datenschutzerklärung am Anfang dieser Seite.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">7. Änderungen des Impressums</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">7. Changes to the Imprint</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Ich behalte mir vor, dieses Impressum jederzeit zu ändern. Es wird empfohlen, diese Seite regelmäßig auf Updates zu überprüfen.
     </p>
-    <p *ngIf="language.language == 'eng'">
-      The processing of personal data on this website is carried out in
-      accordance with the privacy policy. For more information about data
-      protection, please refer to the privacy policy at the beginning of this
-      page.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      I reserve the right to change this imprint at any time. It is recommended to check this page regularly for updates.
     </p>
 
-    <h2 *ngIf="language.language == 'ger'">7. Änderungen des Impressums</h2>
-    <h2 *ngIf="language.language == 'eng'">7. Changes to the Imprint</h2>
-    <p *ngIf="language.language == 'ger'">
-      Ich behalte mir vor, dieses Impressum jederzeit zu ändern. Es wird
-      empfohlen, diese Seite regelmäßig auf Updates zu überprüfen.
+    <h2 class="section-title" *ngIf="language.language == 'ger'">8. Kontakt</h2>
+    <h2 class="section-title" *ngIf="language.language == 'eng'">8. Contact</h2>
+    <p class="policy-paragraph" *ngIf="language.language == 'ger'">
+      Bei Fragen zum Impressum oder zur Nutzung dieser Website kannst du dich gerne an mich wenden:
     </p>
-    <p *ngIf="language.language == 'eng'">
-      I reserve the right to change this imprint at any time. It is recommended
-      to check this page regularly for updates.
+    <p class="policy-paragraph" *ngIf="language.language == 'eng'">
+      If you have any questions about the imprint or the use of this website, feel free to contact me:
     </p>
-
-    <h2 *ngIf="language.language == 'ger'">8. Kontakt</h2>
-    <h2 *ngIf="language.language == 'eng'">8. Contact</h2>
-    <p *ngIf="language.language == 'ger'">
-      Bei Fragen zum Impressum oder zur Nutzung dieser Website kannst du dich
-      gerne an mich wenden:
-    </p>
-    <p *ngIf="language.language == 'eng'">
-      If you have any questions about the imprint or the use of this website,
-      feel free to contact me:
-    </p>
-    <p>
+    <p class="provider-info">
       <strong>Eugen Ferchow</strong><br />
       E-Mail: [Eugen.ferchow&#64;gmx.de]<br />
       Adresse: [Deine Adresse]<br />

@@ -8,9 +8,19 @@
         position: absolute;
         top: 24px;
         right: 120px;
+        @media (max-width: 800px) {
+            right: 40px;
+        }
+        @media (max-width: 450px) {
+            right: 20px;
+        }
         svg {
             width: 35px;
             height: 35px;
+            @media (max-width: 450px) {
+                width: 25px;
+                height: 25px;
+            }
         }
     }
     p, ul, h3 {
@@ -24,5 +34,30 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        .policy-title {
+            @media (max-width: 800px) {
+                font-size: 40px;
+            }
+            @media (max-width: 450px) {
+                font-size: 30px;
+            }
+        }
+        .section-title {
+            @media (max-width: 800px) {
+                font-size: 24px;
+                text-align: start;
+            }
+            @media (max-width: 450px) {
+                font-size: 18px;
+            }
+        }
+        .policy-paragraph {
+            @media (max-width: 800px) {
+                font-size: 14px;
+            }
+            @media (max-width: 450px) {
+                font-size: 14px;
+            }
+        }
     }
 }
