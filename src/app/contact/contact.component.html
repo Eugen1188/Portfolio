@@ -58,6 +58,7 @@
       </div>
     </div>
     <div class="form-cont">
+      <div class="email-success" [class.d-none]="sendSuccess == false">Email has been sent successfully!</div>
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="form-line-cont hov1">
           <div class="border-hover-first">

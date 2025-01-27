@@ -24,6 +24,8 @@ export class ContactComponent {
   placeholderEmail: string = "youremail@email.com";
   placeholderMessage: string = "Hello Eugen, I am interested in...";
 
+  sendSuccess:boolean = false;
+
   http = inject(HttpClient)
 
   mailTest = true;
@@ -54,9 +56,17 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      this.sendSuccessMessage()
       ngForm.resetForm();
     }
+  }
+
+  sendSuccessMessage() {
+    this.sendSuccess = true;
+  
+    setTimeout(() => {
+      this.sendSuccess = false;
+    }, 5000);
   }
 
   contactData = {
