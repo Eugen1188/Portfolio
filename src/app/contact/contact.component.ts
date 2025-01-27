@@ -28,10 +28,10 @@ export class ContactComponent {
 
   http = inject(HttpClient)
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'w01fdee3.kasserver.com/Portfolio/src/app/sendMail.php',
+    endPoint: 'sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -49,6 +49,7 @@ export class ContactComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            this.sendSuccessMessage()
           },
           error: (error) => {
             console.error(error);

@@ -30,6 +30,26 @@ tr {
     align-items: center;
     border-bottom: 1px solid rgba(61, 207, 182, 1);
     padding: 40px 32px;
+    .img-cont0, .img-cont1, .img-cont2 {
+        position: absolute; 
+        right: 0; 
+        display: none;
+        @media (max-width: 1285px) {
+            right: -40px;
+            img {
+                width: 200px;
+            }
+        }
+        @media (max-width: 1250px) {
+            right: -40px;
+            img {
+                width: 150px;
+            }
+        }
+        @media (max-width: 1200px) {
+            display: none !important;
+        }
+    }
     @media (max-width: 1050px) {
         width: auto;
       }
@@ -74,13 +94,13 @@ tr {
     }
     &:hover {
         .img-cont0 {
-            display: flex !important;
+            display: flex;
         }
         .img-cont1 {
-            display: flex !important;
+            display: flex;
         }
         .img-cont2 {
-            display: flex !important;
+            display: flex;
         }
         .arrow-outward {
             display: flex;

@@ -24,6 +24,12 @@ export class PortfolioSectionComponent {
       descriptionGer: [
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzern und Kategorien zu. ',
       ],
+      linkLiveTest: [
+        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
+      ],
+      linkGit: [
+        'https://github.com/Eugen1188/Join-Projekt',
+      ],
     },
     {
       portfolio: 'El Pollo Loco',
@@ -31,8 +37,11 @@ export class PortfolioSectionComponent {
       descriptionEng: [
         'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen. ',
       ],
-      descriptionGer: [
-        'Springen, laufen und werfen – ein Spiel basierend auf dem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
+      linkLiveTest: [
+        'http://ferchow-eugen.de/elPolloLoco/index.html',
+      ],
+      linkGit: [
+        'https://github.com/Eugen1188/ElPolloLoco',
       ],
     },
     {
@@ -41,8 +50,11 @@ export class PortfolioSectionComponent {
       descriptionEng: [
         'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. ',
       ],
-      descriptionGer: [
-        'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.',
+      linkLiveTest: [
+        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
+      ],
+      linkGit: [
+        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
       ],
     },
   ];

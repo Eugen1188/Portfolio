@@ -28,13 +28,13 @@
       <div class="project-buttons-cont">
         <div class="std-btn on-hover">
           <div class="inner-btn-cont">
-            <span>GitHub</span
+            <a href="{{ projects[index].linkGit }}" target="_blank"></a><span>GitHub</span
             ><img src="assets/img/arrow_forward_blue.png" alt="" />
           </div>
         </div>
         <div class="std-btn on-hover">
           <div class="inner-btn-cont">
-            <span>Live Test</span
+            <a href="{{ projects[index].linkLiveTest }}" target="_blank"></a><span>Live Test</span
             ><img src="assets/img/arrow_forward_blue.png" alt="" />
           </div>
         </div>
@@ -62,7 +62,7 @@
       </svg>
       <img
         class="project-big-screen"
-        src="assets/img/project_img/{{ index }}.png"
+        [src]="index ? '/assets/img/project_img/' + index + '.png' : '/assets/img/project_img/0.png'"
         alt=""
       />
       <div class="next-cont" (click)="renderNextProject()">
