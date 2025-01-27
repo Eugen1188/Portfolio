@@ -31,7 +31,7 @@ export class ContactComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'http://localhost:4200/sendMail.php',
+    endPoint: 'w01fdee3.kasserver.com/Portfolio/src/app/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
