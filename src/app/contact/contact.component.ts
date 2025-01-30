@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject} from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { Router } from '@angular/router';
 import { LanguageService } from '../language.service';
 
 @Component({
@@ -42,7 +41,6 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    console.log(this.post);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -78,16 +76,17 @@ export class ContactComponent {
 
   checkInput() {
     let name = document.getElementById('name') as HTMLOptionElement;
-    let email = document.getElementById('email') as HTMLOptionElement;
+    let email = document.getElementById('email') as HTMLInputElement;
     let message = document.getElementById('message') as HTMLOptionElement;
     let checkbox = document.getElementById('checkbox') as HTMLInputElement;
     let acceptError = document.getElementById('error-msg');
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (name.value == "") {
       this.placeholderName = this.placeholderNameError;
       name.classList.add('input-error');
     }
-    if (email.value == "") {
+    if (email.value == "" || !email.validity.valid) {
       this.placeholderEmail = this.placeholderEmailError;
       email.classList.add('input-error');
     }    

@@ -10,17 +10,25 @@
         padding-top: 100px;
         width: 90%;
         overflow: hidden;
-
+        @media (min-width: 1921px) {
+            justify-content: space-evenly;
+        }
         .mobile-disable {
             display: flex;
+            @media (min-width: 1921px) {
+                display: none;
+              }
         }
         .mobile-enable {
             display: none;
+            @media (min-width: 1921px) {
+                display: flex;
+
+              }
         }
         @media (max-width: 1280px) {
             width: auto;
             padding-top: 50px;
-
             .mobile-disable {
                 display: none;
             }
@@ -34,6 +42,10 @@
                 align-items: center;
                 gap: 40px;
               }
+              @media (min-width: 1921px) {
+                justify-content: space-around;
+
+              }
             .technologie-description-cont{
                 height: auto;
                 @media (max-width: 1280px) {
@@ -42,6 +54,11 @@
                         display: flex;
                         margin-bottom: 20px;
                     }
+                  }
+                  @media (min-width: 1921px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
                   }
                 .skill-cont {
                     width: 520px;
@@ -56,15 +73,18 @@
                     justify-content: space-between;
                     @media (max-width: 1280px) {
                         width: 500px;
-
-                      }
-                      @media (max-width: 600px) {
+                    }
+                    @media (max-width: 600px) {
                         width: 292px;
                         height: auto;
                     }
                     @media (max-width: 380px) {
                         width: 234px;
                       }
+                      @media (min-width: 1921px) {
+                        width: 734px;
+                        height: auto;
+                    }
                     .paragraph-bigger-cont {
                         .paragraph-bigger-white {
                             font-family: 'Fira';
@@ -118,21 +138,43 @@
                     height: auto;
                   }
                   @media (max-width: 380px) {
-                    width: 298px;
-                    gap: 59px;
+                    width: 295px;
+                    gap: 55px;
                   }
+                  @media (min-width: 1921px) {
+                    width: 800px;
+                    margin-top: 50px;
+                }
                 .skill-icons {
                     width: 104px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 8px;
+                    @media (min-width: 1921px) {
+                        width: 146px;
+                    }
+                    .paragraph2 {
+                        font-size: 16px; 
+                        width: 331px; 
+                        height: 38px;
+                        @media (min-width: 1921px) {
+                            height: auto;
+                            width: auto;
+                        }
+                    }
                     @media (max-width: 380px) {
                         width: 60px;
                       }
                     img {
                         transition: 0.3s;
                         height: 60px;
+                        @media (min-width: 1921px) {
+                            height: 90px;
+                        }
+                        @media (max-width: 380px) {
+                            height: 40px;
+                          }
                         &:hover {
                             transform: scale(1.1);
                         }
@@ -145,6 +187,14 @@
                         letter-spacing: -0.03em;
                         color: rgba(255, 255, 255, 1);;
                         text-align: center;
+                        @media (max-width: 380px) {
+                            font-size: 13px;
+                            line-height: 17.6px;
+                          }
+                        @media (min-width: 1921px) {
+                            font-size: 28px;
+                            line-height: 33px;
+                        }
     
                     }
                 }
@@ -159,6 +209,15 @@
     position: absolute;
     top: -120px; 
     left: -5px;
+}
+
+.btn-bigscreen {
+    height: 48px; 
+    width: 122px;
+    @media (min-width: 1921px) {
+        width: 250px !important;
+        height: 90px;
+    }
 }
 
 .change-color {

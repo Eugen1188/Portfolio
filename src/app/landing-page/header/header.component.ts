@@ -24,17 +24,15 @@ export class HeaderComponent {
   setLanguage(lang: string): void {
     this.selectedLanguage = lang;
     this.language.language = lang;
-    console.log(this.selectedLanguage);  }
+  }
 
     closeScreen() {
       this.isVisible = false;
       this.hiddeBackground.isOpen = false;
-      console.log(this.isVisible);
     }
 
     openMenu() {
       this.hiddeBackground.isOpen = true;
       this.isVisible = true;
-      console.log(this.isVisible);
     }
 }

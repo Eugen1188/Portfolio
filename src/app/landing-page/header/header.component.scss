@@ -17,6 +17,10 @@
     @media (max-width: 600px) {
         padding: 0 10px 0 10px;
     }
+    @media (min-width: 1921px) {
+        height: 200px;
+
+    }
     .menu-mobile {
         display: none;
         @media (max-width: 900px) {
@@ -35,6 +39,10 @@
     position: relative;
     border: 1px solid rgba(61, 207, 182, 1);
     align-items: center;
+    @media (min-width: 1921px) {
+        width: 250px;
+        height: 70px;
+    }
     &:hover {
         border: 1px solid rgb(255, 255, 255);
         .eng {
@@ -49,6 +57,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 1921px) {
+            width: 115px;
+            height: 70px;
+            font-size: 30px;
+        }
     }
     .eng {
         z-index: 999;
@@ -74,6 +87,10 @@ nav {
     @media (max-width: 900px) {
         display: none;
     }
+    @media (min-width: 1921px) {
+        align-items: center;
+        gap: 60px;
+    }
 }
 
 .nav-link {
@@ -82,6 +99,9 @@ nav {
     align-items: center;
     width: 105px;
     height: 35px;
+    @media (min-width: 1921px) {
+        width: auto;
+    }
     &:hover .circle {
         display: flex;
     }
@@ -92,6 +112,12 @@ nav {
         background-color: rgba(61, 207, 182, 1);
         transform: translateY(5px);
         display: none;
+        @media (min-width: 1921px) {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            bottom: 30px;
+        }
     }
     a {
         text-decoration: none;
@@ -104,10 +130,17 @@ nav {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: rgba(255, 255, 255, 1);
+        @media (min-width: 1921px) {
+            font-size: 60px;
+        }
     }
 }
 
 svg {
+    @media (min-width: 1921px) {
+        width: 348px;
+        height: auto;
+    }
     .logo-name {
         @media (max-width: 900px) {
             display: none;

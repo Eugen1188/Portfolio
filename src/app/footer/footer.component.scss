@@ -30,15 +30,32 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        font-size: 16px;
+        @media (min-width: 1921px) {
+            height: auto;
+            gap: 20px;
+        }
+        .logo {
+            svg {
+                @media (min-width: 1921px) {
+                    width: 348px;
+                    height: auto;
+                }
+            }
+        }
     }
     .profession {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 16px;
         span {
             font-family: 'Karla-light';
             font-size: 16px;
             color: white;
+            @media (min-width: 1921px) {
+                font-size: 24px;
+
+            }
         }
     }
     .copyright {
@@ -47,6 +64,9 @@
         font-size: 18px;
         @media (max-width: 600px) {
             display: none;
+        }
+        @media (min-width: 1921px) {
+            font-size: 32px;
         }
     }
     .links {
@@ -76,6 +96,10 @@
             color: white;
             font-family: 'Karla-light';
             line-height: 19.2px;
+            @media (min-width: 1921px) {
+                font-size: 24px;
+                line-height: 27px;
+            }
         }
     }
 }

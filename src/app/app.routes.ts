@@ -7,5 +7,4 @@ export const routes: Routes = [
     { path: '', component: MainComponentComponent },
     { path: 'privacy_policy', component: PrivacyPolicyComponent },
     { path: 'legal_notice', component: LegalNoticeComponent },
-
   ];

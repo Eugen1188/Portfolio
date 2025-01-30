@@ -66,8 +66,6 @@ export class PortfolioSectionComponent {
     this.isVisible = true;
     this.selectedIndex = i;
     this.hiddeBackground.isOpen = true;
-    console.log('ondivclickindex' + this.selectedIndex);
-
   }
 
   visibilityChange(newVisibility: boolean) {

@@ -35,6 +35,5 @@ export class BigScreenComponent {
     if (this.index != null) {
       this.renderIndex.emit(this.index);
     }
-    console.log('closeindex' + this.index)
   }
 }

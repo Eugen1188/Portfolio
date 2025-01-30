@@ -16,9 +16,11 @@
     flex-direction: column;
     gap: 12px;
     height: 350px;
-    width: 880px;
     @media (max-width: 450px) {
         height: 430px;
+    }
+    @media (min-width: 1921px) {
+        height: auto;
     }
 }
 
@@ -31,7 +33,10 @@
     justify-content: space-between;
     @media (max-width: 450px) {
         justify-content: space-evenly;
-      }
+    }
+    @media (min-width: 1921px) {
+        width: 50%;
+    }
 }
 
 
@@ -41,6 +46,9 @@
     height: 240px;
     @media (max-width: 600px) {
         height: 200px;
+    }
+    @media (min-width: 1921px) {
+        height: 450px;
     }
 }
 
@@ -54,6 +62,9 @@
     @media (max-width: 1100px) {
         left: 40px;
     }
+    @media (min-width: 35000px) {
+        left: 400px;
+    }
 }
 
 .round {
@@ -65,7 +76,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 1921px) {
+        width: 62px;
+        height: 123px;
+    }
 }
+
 
 .arrow {
     display: flex;
@@ -74,6 +90,11 @@
     animation: moveArrow 1s infinite;
     .arrow-img {
         height: 12px;
+        width: 30px;
+        @media (min-width: 1921px) {
+            height: 32px;
+            width: auto;
+        }
     }
 }
 
@@ -130,7 +151,10 @@
       @media (max-width: 450px) {
         font-size: 18px;
     }
-
+    @media (min-width: 1921px) {
+        font-size: 110px;
+        line-height: 120px;
+    }
 }
 
 .my-name {
@@ -150,7 +174,10 @@
     @media (max-width: 450px) {
         font-size: 40px;
         line-height: 40px;
-
+    }
+    @media (min-width: 1921px) {
+        font-size: 280px;
+        line-height: 280px;
     }
 }
 
@@ -160,6 +187,9 @@
     height: 186px;
     @media (max-width: 600px) {
         height: 150px;
+    }
+    @media (min-width: 1921px) {
+        height: 300px;
     }
 }
 
@@ -181,8 +211,18 @@
     @media (max-width: 1100px) {
         right: 40px;
     }
-    .myemail:hover {
-        color: #3DCFB6;
+    @media (min-width: 1921px) {
+        height: auto;
+    }
+    @media (min-width: 35000px) {
+        right: 400px;
+    }
+    .myemail {
+        cursor: pointer;
+        &:hover {
+            color: #3DCFB6;
+
+        }
     }
     img {
         &:hover {
@@ -196,12 +236,22 @@
         background-color: rgba(61, 207, 182, 1);
         transform: translateX(8px);
         display: none;
+        @media (min-width: 1921px) {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -35px;
+        }
     }
     span {
         transform: rotate(-90deg);
         margin-bottom: 90px;
         @media (max-width: 600px) {
             display: none;
+        }
+        @media (min-width: 1921px) {
+            font-size: 30px;
+            margin-bottom: 150px;
         }
     }
 }
@@ -210,6 +260,16 @@
     display: flex;
     align-items: center;
     align-self: baseline;
+    @media (min-width: 1921px) {
+        align-self: auto;
+    }
+    img {
+        @media (min-width: 1921px) {
+            width: 60px;
+            height: auto;
+        }
+    }
+
     &:hover {
         .circle {
             display: flex;

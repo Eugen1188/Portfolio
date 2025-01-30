@@ -11,6 +11,10 @@
     display: flex;
     backdrop-filter: blur(2px);
     z-index: 2;
+    @media (min-width: 1921px) {
+        height: 100px;
+        align-items: center;
+    }
     .marquee{
         height: 62px;
         display: flex;
@@ -34,9 +38,17 @@
             font-size: 32px;
             opacity: 1;
             z-index: 999;
+            @media (min-width: 1921px) {
+
+                font-size: 42px;
+            }
         }
         .bullet {
             font-size: 28px;
+            @media (min-width: 1921px) {
+
+                font-size: 32px;
+            }
         }
     }
 }
