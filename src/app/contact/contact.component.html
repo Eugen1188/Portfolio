@@ -97,6 +97,7 @@
               name="email"
               [(ngModel)]="contactData.email"
               [placeholder]="placeholderEmail"
+              #email="ngModel"
               (click)="resetInput()"
               required
             />

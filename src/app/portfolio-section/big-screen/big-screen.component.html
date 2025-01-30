@@ -10,10 +10,10 @@
         >What is this project about?</span
       >
 
-      <span style="height: 80px;" *ngIf="language.language == 'ger'" class="paragraph-no-opacity">
+      <span *ngIf="language.language == 'ger'" class="paragraph-no-opacity project-paragraph">
         {{ projects[index].descriptionGer }}
       </span>
-      <span style="height: 80px;" *ngIf="language.language == 'eng'" class="paragraph-no-opacity">
+      <span *ngIf="language.language == 'eng'" class="paragraph-no-opacity project-paragraph">
         {{ projects[index].descriptionEng }}
       </span>
       <div class="tools-cont">

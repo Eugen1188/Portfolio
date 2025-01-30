@@ -80,13 +80,13 @@ export class ContactComponent {
     let message = document.getElementById('message') as HTMLOptionElement;
     let checkbox = document.getElementById('checkbox') as HTMLInputElement;
     let acceptError = document.getElementById('error-msg');
-    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (name.value == "") {
       this.placeholderName = this.placeholderNameError;
       name.classList.add('input-error');
     }
     if (email.value == "" || !email.validity.valid) {
+      email.value = "";
       this.placeholderEmail = this.placeholderEmailError;
       email.classList.add('input-error');
     }    
@@ -116,5 +116,4 @@ export class ContactComponent {
       acceptError.classList.add('d-none');
     }
   }
-
 }
