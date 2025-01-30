@@ -37,6 +37,9 @@ export class PortfolioSectionComponent {
       descriptionEng: [
         'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen. ',
       ],
+      descriptionGer: [
+        'Springen, laufen und werfen“-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
+      ],
       linkLiveTest: [
         'http://ferchow-eugen.de/elPolloLoco/index.html',
       ],
@@ -49,6 +52,9 @@ export class PortfolioSectionComponent {
       tools: ['Angular', 'Firebase', 'TypeScript'],
       descriptionEng: [
         'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. ',
+      ],
+      descriptionGer: [
+        'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.',
       ],
       linkLiveTest: [
         'http://ferchow-eugen.de/Kanban_Projekt/index.html',
