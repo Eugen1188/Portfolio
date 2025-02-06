@@ -23,11 +23,12 @@ export class ContactComponent {
   placeholderEmail: string = "youremail@email.com";
   placeholderMessage: string = "Hello Eugen, I am interested in...";
 
-  sendSuccess:boolean = false;
+  // sendSuccess:boolean = false;
+  emailSent:boolean = false;
 
   http = inject(HttpClient)
 
-  mailTest = false;
+  mailTest = true;
 
   post = {
     endPoint: 'sendMail.php',
@@ -45,28 +46,31 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
-            this.sendSuccessMessage()
+            // this.sendSuccessMessage()
+            this.emailSent = true;
+            console.log(this.emailSent);
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.sendSuccessMessage()
+      // this.sendSuccessMessage()
       ngForm.resetForm();
+      this.emailSent = true;
+
     }
   }
 
-  sendSuccessMessage() {
-    this.sendSuccess = true;
+  // sendSuccessMessage() {
+  //   this.sendSuccess = true;
   
-    setTimeout(() => {
-      this.sendSuccess = false;
-    }, 5000);
-  }
+  //   setTimeout(() => {
+  //     this.sendSuccess = false;
+  //   }, 5000);
+  // }
 
   contactData = {
     name: "",

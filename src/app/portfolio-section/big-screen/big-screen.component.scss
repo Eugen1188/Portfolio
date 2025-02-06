@@ -10,13 +10,19 @@
   align-items: center;
   z-index: 1000;
   .projekt-screen-cont {
+    @media (min-width: 2300px) {
+      width: 1920px;
+    }
     @media (min-width: 1921px) {
       height: 730px;
+    }
+    @media (min-width: 3000px) {
+      height: 1100px;
     }
     @media (max-width: 960px) {
       flex-flow: column-reverse;
       height: auto;
-      padding: 20px 0px 20px 0px;
+      padding: 60px 0px 20px 0px;
       gap: 8px;
       width: 500px;
     }
@@ -33,16 +39,23 @@
     align-items: center;
     box-sizing: border-box;
     padding: 80px 60px;
+    position: relative;
     .project-info-cont {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
       width: 50%;
+      @media (min-width: 3000px) {
+        width: 60%;
+      }
       .project-paragraph {
         height: 80px;
         @media (max-width: 960px) {
           width: 300px;
+        }
+        @media (min-width: 3000px) {
+          height: auto;
         }
         @media (max-width: 560px) {
           width: 258px !important;
@@ -99,6 +112,9 @@
         letter-spacing: -0.02em;
         text-align: left;
         text-decoration-skip-ink: none;
+        @media (min-width: 3000px) {
+          font-size: 218px;
+        }
         @media (max-width: 960px) {
           font-size: 60px;
           line-height: 60px;
@@ -127,6 +143,10 @@
           font-size: 30px;
           line-height: 32px;
         }
+        @media (min-width: 3000px) {
+          font-size: 150px; 
+          line-height: 150px;
+        }
       }
       .project-about {
         font-family: "Fira";
@@ -140,6 +160,9 @@
           font-size: 20px;
           line-height: 24px;
         }
+        @media (min-width: 3000px) {
+          font-size: 52px; 
+        }
       }
       .tools-cont {
         display: flex;
@@ -152,10 +175,16 @@
         text-decoration-skip-ink: none;
         color: white;
         gap: 16px;
+        @media (min-width: 3000px) {
+          gap: 40px;
+        }
         .tool {
           display: flex;
           align-items: center;
           gap: 8px;
+          @media (min-width: 3000px) {
+            gap: 24px;
+          }
           span {
             @media (min-width: 1921px) {
               font-size: 24px;
@@ -163,10 +192,17 @@
             @media (max-width: 560px) {
               font-size: 12px;
             }
+            @media (min-width: 3000px) {
+              font-size: 48px;
+            }
           }
           img {
             width: 32px;
             height: 32px;
+            @media (min-width: 3000px) {
+              width: 80px;
+              height: 80px;
+            }
             @media (max-width: 560px) {
               width: 18px;
               height: 18px;
@@ -184,11 +220,21 @@
     justify-content: space-between;
     align-items: self-end;
     width: 50%;
+    svg {
+      @media (max-width: 960px) {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+      }
+    }
     @media (max-width: 960px) {
       width: auto;
       gap: 20px;
     }
     .project-big-screen {
+      @media (min-width: 2300px) {
+        width: 630px;
+      }
       @media (max-width: 1220px) {
         width: 400px;
       }

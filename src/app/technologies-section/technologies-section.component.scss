@@ -1,242 +1,269 @@
 .main {
-    width: 100%;
-    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(8, 70, 59) 0%, #1C1C1C 100%);
-    display: flex;
-    justify-content: center;
-    @media (max-width: 1280px) {
-        height: auto;
+  width: 100%;
+  background: radial-gradient(
+    22.43% 43.85% at 1.22% 52.45%,
+    rgb(8, 70, 59) 0%,
+    #1c1c1c 100%
+  );
+  display: flex;
+  justify-content: center;
+  @media (max-width: 1280px) {
+    height: auto;
+  }
+  .technologie-section {
+    padding-top: 100px;
+    overflow: hidden;
+    @media (min-width: 1921px) {
+      justify-content: space-evenly;
+    }
+    .mobile-disable {
+      display: flex;
+      @media (min-width: 1921px) {
+        display: none;
       }
-    .technologie-section{
-        padding-top: 100px;
-        width: 90%;
-        overflow: hidden;
-        @media (min-width: 1921px) {
-            justify-content: space-evenly;
-        }
-        .mobile-disable {
-            display: flex;
-            @media (min-width: 1921px) {
-                display: none;
-              }
-        }
-        .mobile-enable {
-            display: none;
-            @media (min-width: 1921px) {
-                display: flex;
-
-              }
-        }
+    }
+    .mobile-enable {
+      display: none;
+      @media (min-width: 1921px) {
+        display: flex;
+      }
+    }
+    @media (max-width: 1280px) {
+      width: auto;
+      padding-top: 50px;
+      .mobile-disable {
+        display: none;
+      }
+    }
+    .boxes {
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      gap: 72px;
+      @media (max-width: 1280px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+      @media (min-width: 1921px) {
+        justify-content: space-around;
+      }
+      .technologie-description-cont {
+        height: auto;
         @media (max-width: 1280px) {
-            width: auto;
-            padding-top: 50px;
-            .mobile-disable {
-                display: none;
+          height: auto;
+          .mobile-enable {
+            display: flex;
+            margin-bottom: 20px;
+          }
+        }
+        @media (min-width: 1921px) {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .skill-cont {
+          width: 520px;
+          height: 503px;
+          background: rgba(61, 207, 182, 0.1);
+          border: 1px solid rgba(61, 207, 182, 1);
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          padding: 32px;
+          justify-content: space-between;
+          @media (max-width: 1280px) {
+            width: 500px;
+          }
+          @media (max-width: 600px) {
+            width: 292px;
+            height: auto;
+          }
+          @media (max-width: 380px) {
+            width: 234px;
+          }
+          @media (min-width: 1921px) {
+            width: 734px;
+            height: auto;
+          }
+          @media (min-width: 3000px) {
+            width: 1134px;
+            gap: 68px;
+          }
+          .paragraph-bigger-cont {
+            @media (max-width: 450px) {
+              display: flex;
+              gap: 8px;
+            }
+            .paragraph-bigger-white {
+              font-family: "Fira";
+              font-size: 24px;
+              line-height: 19.2px;
+              font-weight: 700;
+              color: white;
+              @media (max-width: 450px) {
+                font-size: 20px;
+              }
+              @media (max-width: 380px) {
+                font-size: 16px;
+              }
+              @media (min-width: 3000px) {
+                font-size: 50px;
+              }
+            }
+            .paragraph-bigger-black {
+              font-family: "Fira";
+              font-size: 24px;
+              line-height: 19.2px;
+              font-weight: 700;
+              color: rgba(61, 207, 182, 1);
+              @media (max-width: 600px) {
+                font-size: 18px;
+              }
+              @media (max-width: 380px) {
+                font-size: 16px;
+              }
+              @media (min-width: 3000px) {
+                font-size: 50px;
+              }
             }
           }
-        .boxes {
-            display: flex;
-            margin-top: 20px;
-            justify-content: space-between;
-            @media (max-width: 1280px) {
-                flex-direction: column;
-                align-items: center;
-                gap: 40px;
-              }
-              @media (min-width: 1921px) {
-                justify-content: space-around;
-
-              }
-            .technologie-description-cont{
-                height: auto;
-                @media (max-width: 1280px) {
-                    height: auto;
-                    .mobile-enable {
-                        display: flex;
-                        margin-bottom: 20px;
-                    }
-                  }
-                  @media (min-width: 1921px) {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                  }
-                .skill-cont {
-                    width: 520px;
-                    height: 503px;
-                    background: rgba(61, 207, 182, 0.1);
-                    border: 1px solid rgba(61, 207, 182, 1);
-                    border-radius: 30px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 40px;
-                    padding: 32px;
-                    justify-content: space-between;
-                    @media (max-width: 1280px) {
-                        width: 500px;
-                    }
-                    @media (max-width: 600px) {
-                        width: 292px;
-                        height: auto;
-                    }
-                    @media (max-width: 380px) {
-                        width: 234px;
-                      }
-                      @media (min-width: 1921px) {
-                        width: 734px;
-                        height: auto;
-                    }
-                    .paragraph-bigger-cont {
-                        @media (max-width: 450px) {
-                            display: flex;
-                            gap: 8px;
-                          }
-                        .paragraph-bigger-white {
-                            font-family: 'Fira';
-                            font-size: 24px;
-                            line-height: 19.2px;
-                            font-weight: 700;
-                            color: white;
-                            @media (max-width: 450px) {
-                                font-size: 20px;
-                              }
-                            @media (max-width: 380px) {
-                                font-size: 16px;
-                              }
-                        }
-                        .paragraph-bigger-black {
-                            font-family: 'Fira';
-                            font-size: 24px;
-                            line-height: 19.2px;
-                            font-weight: 700;
-                            color: rgba(61, 207, 182, 1);
-                            @media (max-width: 600px) {
-                                font-size: 18px;
-                            }
-                            @media (max-width: 380px) {
-                                font-size: 16px;
-                              }
-                        }
-
-                    }
-                }
+        }
+      }
+      .skill-icons-cont {
+        width: 632px;
+        height: auto;
+        display: flex;
+        gap: 72px;
+        flex-wrap: wrap;
+        @media (max-width: 1285px) {
+          width: auto;
+          height: auto;
+          gap: 42px;
+          height: auto;
+        }
+        @media (max-width: 1280px) {
+          width: 563px;
+          height: 428px;
+          gap: 125px;
+          height: auto;
+        }
+        @media (max-width: 600px) {
+          width: 361px;
+          height: 428px;
+          gap: 24px;
+          height: auto;
+        }
+        @media (max-width: 380px) {
+          width: 295px;
+          gap: 55px;
+        }
+        @media (min-width: 1921px) {
+          width: 800px;
+          margin-top: 50px;
+        }
+        @media (min-width: 3000px) {
+          width: 1200px;
+          margin-top: 100px;
+          gap: 107px;
+        }
+        .skill-icons {
+          width: 104px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          @media (min-width: 1921px) {
+            width: 146px;
+          }
+          .paragraph2 {
+            font-size: 16px;
+            width: 331px;
+            height: 38px;
+            @media (min-width: 1921px) {
+              height: auto;
+              width: auto;
             }
-            .skill-icons-cont {
-                width: 632px;
-                height: auto;
-                display: flex;
-                gap: 72px;
-                flex-wrap: wrap;
-                @media (max-width: 1285px) {
-                    width: auto;
-                    height: auto;
-                    gap: 42px;
-                    height: auto;
-                  }
-                @media (max-width: 1280px) {
-                    width: 563px;
-                    height: 428px;
-                    gap: 125px;
-                    height: auto;
-                  }
-                  @media (max-width: 600px) {
-                    width: 361px;
-                    height: 428px;
-                    gap: 24px;
-                    height: auto;
-                  }
-                  @media (max-width: 380px) {
-                    width: 295px;
-                    gap: 55px;
-                  }
-                  @media (min-width: 1921px) {
-                    width: 800px;
-                    margin-top: 50px;
-                }
-                .skill-icons {
-                    width: 104px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 8px;
-                    @media (min-width: 1921px) {
-                        width: 146px;
-                    }
-                    .paragraph2 {
-                        font-size: 16px; 
-                        width: 331px; 
-                        height: 38px;
-                        @media (min-width: 1921px) {
-                            height: auto;
-                            width: auto;
-                        }
-                    }
-                    @media (max-width: 380px) {
-                        width: 60px;
-                      }
-                    img {
-                        transition: 0.3s;
-                        height: 60px;
-                        @media (min-width: 1921px) {
-                            height: 90px;
-                        }
-                        @media (max-width: 380px) {
-                            height: 40px;
-                          }
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                    }
-                    span {
-                        font-family: 'Fira-light';
-                        font-size: 18px;
-                        font-weight: 400;
-                        line-height: 21.6px;
-                        letter-spacing: -0.03em;
-                        color: rgba(255, 255, 255, 1);;
-                        text-align: center;
-                        @media (max-width: 380px) {
-                            font-size: 13px;
-                            line-height: 17.6px;
-                          }
-                        @media (min-width: 1921px) {
-                            font-size: 28px;
-                            line-height: 33px;
-                        }
-    
-                    }
-                }
+          }
+          @media (max-width: 380px) {
+            width: 60px;
+          }
+          img {
+            transition: 0.3s;
+            height: 60px;
+            @media (min-width: 3000px) {
+              height: 120px !important;
             }
-        } 
-    } 
+            @media (min-width: 1921px) {
+              height: 90px;
+            }
+            @media (max-width: 380px) {
+              height: 40px;
+            }
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          span {
+            font-family: "Fira-light";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+            letter-spacing: -0.03em;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            @media (max-width: 380px) {
+              font-size: 13px;
+              line-height: 17.6px;
+            }
+            @media (min-width: 1921px) {
+              font-size: 28px;
+              line-height: 33px;
+            }
+            @media (min-width: 3000px) {
+              font-size: 40px;
+              line-height: 51px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-
 .bubble {
-    display: none;
-    position: absolute;
-    top: -120px; 
-    left: -5px;
+  display: none;
+  position: absolute;
+  top: -120px;
+  left: -5px;
+  @media (min-width: 2300px) {
+    width: 300px;
+    height: 300px;
+    top: -226px;
+    left: -15px;
+  }
 }
 
 .btn-bigscreen {
-    height: 48px; 
-    width: 122px;
-    @media (min-width: 1921px) {
-        width: 250px !important;
-        height: 90px;
-    }
+  height: 48px;
+  width: max-content;
+  @media (min-width: 1921px) {
+    width: 250px !important;
+    height: 90px;
+  }
 }
 
 .change-color {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .show-bubble-on-hover {
-    &:hover .change-color {
-        color: rgba(61, 207, 182, 1) !important;
-    }
+  &:hover .change-color {
+    color: rgba(61, 207, 182, 1) !important;
+  }
 
-    &:hover .bubble {
-        display: flex;
-    }
+  &:hover .bubble {
+    display: flex;
+  }
 }

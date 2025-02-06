@@ -25,6 +25,12 @@
     justify-content: space-between;
     align-items: center;
     height: 20vh;
+    @media (min-width: 1921px) {
+        width: 1672px;
+      }
+      @media (min-width: 3000px) {
+        width: 2472px;
+      }
     .info {
         height: 126px;
         display: flex;
@@ -53,8 +59,10 @@
             font-size: 16px;
             color: white;
             @media (min-width: 1921px) {
-                font-size: 24px;
-
+                font-size: 32px;
+            }
+            @media (min-width: 3000px) {
+                font-size: 32px;
             }
         }
     }
@@ -97,8 +105,12 @@
             font-family: 'Karla-light';
             line-height: 19.2px;
             @media (min-width: 1921px) {
-                font-size: 24px;
-                line-height: 27px;
+                font-size: 32px;
+                line-height: 32px;
+            }
+            @media (min-width: 1921px) {
+                font-size: 32px;
+                line-height: 32px;
             }
         }
     }

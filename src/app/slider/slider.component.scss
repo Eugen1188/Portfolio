@@ -8,8 +8,10 @@
     overflow: hidden;
     @media (min-width: 1921px) {
       height: auto;
-      
-  }
+    }
+    @media (min-width: 3000px) {
+      gap: 130px;
+    }
     @media (max-width: 800px) {
       gap: 56px;
       height: auto;
@@ -39,6 +41,7 @@
         border-radius: 32px;
         @media (min-width: 1921px) {
           height: auto;
+          width: 560px;
         }
         @media (max-width: 800px) {
           width: 358px;
@@ -74,6 +77,9 @@
         justify-content: space-between;
         @media(max-width: 410px) {
           padding: 20px 25px;
+        }
+        @media (min-width: 1921px) {
+          gap: 24px;
         }
         img {
             position: absolute;

@@ -35,10 +35,12 @@
         justify-content: space-evenly;
     }
     @media (min-width: 1921px) {
-        width: 50%;
+        width: 75%;
+    }
+    @media (min-width: 1921px) {
+        width: 800px;
     }
 }
-
 
 .lat-left {
     background: #3DCFB6;
@@ -47,7 +49,7 @@
     @media (max-width: 600px) {
         height: 200px;
     }
-    @media (min-width: 1921px) {
+    @media (min-width: 2300px) {
         height: 450px;
     }
 }
@@ -64,6 +66,12 @@
     }
     @media (min-width: 35000px) {
         left: 400px;
+    }
+    @media (min-width: 1921px) {
+        left: 250px
+    }
+    @media (min-width: 3200px) {
+        left: 500px
     }
 }
 
@@ -151,9 +159,9 @@
       @media (max-width: 450px) {
         font-size: 18px;
     }
-    @media (min-width: 1921px) {
-        font-size: 110px;
-        line-height: 120px;
+    @media (min-width: 2000px) {
+        font-size: 58px;
+        line-height: 58px;
     }
 }
 
@@ -175,7 +183,11 @@
         font-size: 40px;
         line-height: 40px;
     }
-    @media (min-width: 1921px) {
+    @media (min-width: 1921) {
+        font-size: 170px;
+        line-height: 170px;
+    }
+    @media (min-width: 2300px) {
         font-size: 280px;
         line-height: 280px;
     }
@@ -189,6 +201,9 @@
         height: 150px;
     }
     @media (min-width: 1921px) {
+        height: 257px;
+    }
+    @media (min-width: 2300px) {
         height: 300px;
     }
 }
@@ -213,16 +228,21 @@
     }
     @media (min-width: 1921px) {
         height: auto;
+        right: 230px;
     }
-    @media (min-width: 35000px) {
-        right: 400px;
+    @media (min-width: 3200px) {
+        right: 480px;
     }
     .myemail {
-        cursor: pointer;
-        &:hover {
-            color: #3DCFB6;
-
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Karla';
+            &:hover {
+                color: #3DCFB6;
+            }
         }
+        cursor: pointer;
     }
     img {
         &:hover {

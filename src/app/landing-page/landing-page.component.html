@@ -5,8 +5,8 @@
 
     <div> <span class="my-name">Eugen Ferchow</span></div>
     <div class="me-btn-cont">
-      <div class="std-btn"><a href="#projects"></a><span *ngIf="language.language == 'ger'">Meine Projekte</span><span *ngIf="language.language == 'eng'">Check my work</span></div>
-      <div class="std-btn"><a href="#contact"></a><span *ngIf="language.language == 'ger'">Kontakt</span><span *ngIf="language.language == 'eng'">Contact me</span></div>
+      <div class="std-btn"><a href="#projects"></a><span *ngIf="language.language == 'ger'">Meine Projekte</span><span *ngIf="language.language == 'eng'">Check my work</span><span class="hover-btn-element" *ngIf="language.language == 'ger'">Meine Projekte</span><span class="hover-btn-element" *ngIf="language.language == 'eng'">Check my work</span></div>
+      <div class="std-btn"><a href="#contact"></a><span *ngIf="language.language == 'ger'">Kontakt</span><span *ngIf="language.language == 'eng'">Contact me</span><span class="hover-btn-element" *ngIf="language.language == 'ger'">Kontakt</span><span class="hover-btn-element" *ngIf="language.language == 'eng'">Contact me</span></div>
     </div>
   </div>
 
@@ -34,7 +34,7 @@
         <a href="https://github.com/Eugen1188" target="_blank"><img  src="assets/img/git.png" alt=""/></a>
         <div class="circle"></div>
       </div>
-      <span class="myemail" onclick="window.location='mailto:Eugen.Ferchow@gmx.de';">Eugen.Ferchow&#64;gmx.de</span>
+      <span class="myemail"><a href="mailto:Eugen.Ferchow@gmx.de">Eugen.Ferchow&#64;gmx.de</a></span>
     </div>
   </div>
 </div>

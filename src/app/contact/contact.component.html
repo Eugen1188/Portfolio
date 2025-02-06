@@ -47,7 +47,8 @@
             *ngIf="language.language == 'ger'"
             class="small-para-bold"
             style="color: rgba(61, 207, 182, 1)"
-            >Reden wir!</span>
+            >Reden wir!</span
+          >
           <span
             *ngIf="language.language == 'eng'"
             class="small-para-bold"
@@ -58,7 +59,6 @@
       </div>
     </div>
     <div class="form-cont">
-      <div class="email-success" [class.d-none]="sendSuccess == false">Email has been sent successfully!</div>
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="form-line-cont hov1">
           <div class="border-hover-first">
@@ -131,19 +131,28 @@
             <div class="policy-text">
               <span *ngIf="language.language == 'ger'" class="condition"
                 >Ich habe die
-                <a routerLink="/privacy_policy">Datenschutzerklärung</a> gelesen und stimme ihr zu.
+                <a routerLink="/privacy_policy">Datenschutzerklärung</a> gelesen
+                und stimme ihr zu.
               </span>
               <span *ngIf="language.language == 'eng'" class="condition"
-              >I've read the
-              <a routerLink="/privacy_policy">privacy policy</a> and agree to
-              the processing of my data as outlined.
-            </span>
+                >I've read the
+                <a routerLink="/privacy_policy">privacy policy</a> and agree to
+                the processing of my data as outlined.
+              </span>
             </div>
           </div>
-          <span *ngIf="language.language == 'ger'" class="error-msg d-none" id="error-msg">
+          <span
+            *ngIf="language.language == 'ger'"
+            class="error-msg d-none"
+            id="error-msg"
+          >
             Please accept the privacy policy.
           </span>
-          <span *ngIf="language.language == 'eng'" class="error-msg d-none" id="error-msg">
+          <span
+            *ngIf="language.language == 'eng'"
+            class="error-msg d-none"
+            id="error-msg"
+          >
             Bitte akzeptieren Sie die Datenschutzerklärung.
           </span>
         </div>
@@ -151,7 +160,13 @@
           <input class="submit" type="submit" value="" />
           <span *ngIf="language.language == 'ger'">Sag Hallo ;)</span>
           <span *ngIf="language.language == 'eng'">Say Hello ;)</span>
-
+          <span class="hover-btn-element" *ngIf="language.language == 'ger'"
+            >Sag Hallo ;)</span
+          >
+          <span class="hover-btn-element" *ngIf="language.language == 'eng'"
+            >Say Hello ;)</span
+          >
+          <div class="send-msg-cont" [class.success]="emailSent"><div class="hook">✓</div><div class="hidde-cont"></div></div>
         </div>
       </form>
     </div>
