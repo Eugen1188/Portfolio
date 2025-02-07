@@ -73,6 +73,18 @@
     @media (min-width: 3200px) {
         left: 500px
     }
+    @media (min-width: 4000px) {
+        left: 900px;
+    }
+    @media (min-width: 4500px) {
+        left: 1200px;
+    }
+    @media (min-width: 4900px) {
+        left: 1600px;
+    }
+    @media (min-width: 5600px) {
+        left: 1700px;
+    }
 }
 
 .round {
@@ -232,6 +244,21 @@
     }
     @media (min-width: 3200px) {
         right: 480px;
+    }
+    @media (min-width: 3500px) {
+        right: 700px;
+    }
+    @media (min-width: 4000px) {
+        right: 900px;
+    }
+    @media (min-width: 4500px) {
+        right: 1200px;
+    }
+    @media (min-width: 4900px) {
+        right: 1600px;
+    }
+    @media (min-width: 5600px) {
+        right: 1700px;
     }
     .myemail {
         a {

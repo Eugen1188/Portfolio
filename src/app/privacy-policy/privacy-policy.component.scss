@@ -39,12 +39,19 @@
         flex-direction: column;
         gap: 12px;
         overflow-x: hidden;
+        position: relative;
+        @media (min-width: 1921px) {
+            width: 1920px;
+        }
         .title {
-            @media (max-width: 800px) {
+            @media (max-width: 1050px) {
                 font-size: 40px;
             }
-            @media (max-width: 450px) {
+            @media (max-width: 620px) {
                 font-size: 30px;
+            }
+            @media (max-width: 500px) {
+                font-size: 20px;
             }
         }
         .section-title, h3 {
@@ -68,6 +75,5 @@
                 font-size: 14px;
             }
         }
-
     }
 }

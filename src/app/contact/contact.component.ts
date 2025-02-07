@@ -28,7 +28,7 @@ export class ContactComponent {
 
   http = inject(HttpClient)
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'sendMail.php',
@@ -47,9 +47,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            // this.sendSuccessMessage()
-            this.emailSent = true;
-            console.log(this.emailSent);
+            this.playAnimation();
           },
           error: (error) => {
             console.error(error);
@@ -57,20 +55,20 @@ export class ContactComponent {
           complete: () => console.info(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      // this.sendSuccessMessage()
       ngForm.resetForm();
-      this.emailSent = true;
-
+      this.playAnimation();
     }
   }
 
-  // sendSuccessMessage() {
-  //   this.sendSuccess = true;
-  
-  //   setTimeout(() => {
-  //     this.sendSuccess = false;
-  //   }, 5000);
-  // }
+  playAnimation() {
+
+    this.emailSent = true;
+
+    setTimeout(() => {
+      this.emailSent = false;
+    }, 4000); 
+
+  }
 
   contactData = {
     name: "",
