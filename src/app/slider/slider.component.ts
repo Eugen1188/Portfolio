@@ -85,14 +85,14 @@ export class SliderComponent {
       const containerWidth = container ? container.clientWidth : window.innerWidth;
       let dynamicWidth = containerWidth * this.getMultiplier();
       if(window.innerWidth > 1500){
-        dynamicWidth = 760;
+        dynamicWidth = 660;
       }
       const position = index + 1 - this.currentSlide;
       let translateX = position * dynamicWidth;
   
       if (position == -this.recommendations.length + 1) {
         if(window.innerWidth > 1500){
-          dynamicWidth = 760;
+          dynamicWidth = 660;
         }
         translateX = dynamicWidth;
       }
