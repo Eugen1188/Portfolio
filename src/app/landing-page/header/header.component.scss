@@ -35,7 +35,7 @@
   }
   @media (min-width: 1921px) {
       height: 200px;
-
+      align-items: center;
   }
   .menu-mobile {
     display: none;
@@ -124,8 +124,9 @@ nav {
     width: 6.4px;
     height: 6.4px;
     background-color: rgba(61, 207, 182, 1);
-    transform: translateY(5px);
+    transform: translateY(25px);
     display: none;
+    position: absolute;
     // @media (min-width: 1921px) {
     //     position: absolute;
     //     width: 20px;
