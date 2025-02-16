@@ -52,7 +52,7 @@ export class SliderComponent {
       } else if (window.innerWidth > 350) {
         return 0.8;
       } else {
-        return 0.88; // Für Breiten unter 350
+        return 0.88;
       }
     }
     return 0.9;
@@ -83,17 +83,22 @@ export class SliderComponent {
     if (isPlatformBrowser(this.platformId)) {
       const container = document.querySelector('.slider-container');
       const containerWidth = container ? container.clientWidth : window.innerWidth;
-      const dynamicWidth = containerWidth * this.getMultiplier();
+      let dynamicWidth = containerWidth * this.getMultiplier();
+      if(window.innerWidth > 1500){
+        dynamicWidth = 760;
+      }
       const position = index + 1 - this.currentSlide;
       let translateX = position * dynamicWidth;
   
       if (position == -this.recommendations.length + 1) {
+        if(window.innerWidth > 1500){
+          dynamicWidth = 760;
+        }
         translateX = dynamicWidth;
       }
       if (position == this.recommendations.length - 1) {
         translateX = -dynamicWidth;
       }
-  
       return {
         transform: `translateX(${translateX}px)`,
       };
