@@ -8,6 +8,9 @@
     @media (max-width: 1280px) {
       height: auto
     }
+    // @media (min-width: 3000px) {
+    //   height: 93vh;
+    // }
   }
   
   .me-section {
@@ -30,9 +33,9 @@
     @media (min-width: 1921px) {
       height: 1050px;
     }
-    @media (min-width: 3000px) {
-      height: 1400px;
-    }
+    // @media (min-width: 3000px) {
+    //   height: 1400px;
+    // }
     .picure-cont {
       position: relative;
       width: 568px;
@@ -61,9 +64,9 @@
         @media (min-width: 1921px) {
           width: 800px;
       }
-      @media (min-width: 3000px) {
-        width: 1200px;
-    }
+    //   @media (min-width: 3000px) {
+    //     width: 1200px;
+    // }
       }
       .green-lines {
         position: absolute;
@@ -73,10 +76,10 @@
         @media (min-width: 1921px) {
           width: 800px;
         }
-        @media (min-width: 3000px) {
-          width: 1200px;
-          height: 1200px;
-        }
+        // @media (min-width: 3000px) {
+        //   width: 1200px;
+        //   height: 1200px;
+        // }
         @media (max-width: 600px) {
           display: none;
         }
@@ -98,10 +101,10 @@
     @media (min-width: 1921px) {
       width: 800px;
     }
-    @media (min-width: 3000px) {
-      width: 1200px;
-      height: 1134px;
-  }
+    // @media (min-width: 3000px) {
+    //   width: 1200px;
+    //   height: 1134px;
+    // }
     .mobile-set {
       @media (max-width: 600px) {
         margin-left: 104px;
@@ -122,9 +125,9 @@
       @media (min-width: 1921px) {
         height: auto;
       }
-      @media (min-width: 3000px) {
-        height: 1300px;      
-      }
+      // @media (min-width: 3000px) {
+      //   height: 1300px;      
+      // }
       @media (max-width: 600px) {
         width: 292px;
         place-self: center;
@@ -144,10 +147,10 @@
         img {
           width: 30px;
           height: 30px;
-          @media (min-width: 3000px) {
-            width: 60px;
-            height: 60px;
-          }
+          // @media (min-width: 3000px) {
+          //   width: 60px;
+          //   height: 60px;
+          // }
         }
         p {
           font-family: 'Karla';
@@ -162,10 +165,10 @@
           @media (min-width: 1921px) {
             font-size: 28px;
           }
-          @media (min-width: 3000px) {
-            font-size: 43px;
-            line-height: 43px;
-          }
+          // @media (min-width: 3000px) {
+          //   font-size: 43px;
+          //   line-height: 43px;
+          // }
         }
       }
     }

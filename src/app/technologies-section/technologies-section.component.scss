@@ -87,10 +87,10 @@
             width: 734px;
             height: auto;
           }
-          @media (min-width: 3000px) {
-            width: 1134px;
-            gap: 68px;
-          }
+          // @media (min-width: 3000px) {
+          //   width: 1134px;
+          //   gap: 68px;
+          // }
           .paragraph-bigger-cont {
             @media (max-width: 450px) {
               display: flex;
@@ -108,9 +108,9 @@
               @media (max-width: 380px) {
                 font-size: 16px;
               }
-              @media (min-width: 3000px) {
-                font-size: 50px;
-              }
+              // @media (min-width: 3000px) {
+              //   font-size: 50px;
+              // }
             }
             .paragraph-bigger-black {
               font-family: "Fira";
@@ -124,9 +124,9 @@
               @media (max-width: 380px) {
                 font-size: 16px;
               }
-              @media (min-width: 3000px) {
-                font-size: 50px;
-              }
+              // @media (min-width: 3000px) {
+              //   font-size: 50px;
+              // }
             }
           }
         }
@@ -163,11 +163,11 @@
           width: 800px;
           margin-top: 50px;
         }
-        @media (min-width: 3000px) {
-          width: 1200px;
-          margin-top: 100px;
-          gap: 107px;
-        }
+        // @media (min-width: 3000px) {
+        //   width: 1200px;
+        //   margin-top: 100px;
+        //   gap: 107px;
+        // }
         .skill-icons {
           width: 104px;
           display: flex;
@@ -192,9 +192,9 @@
           img {
             transition: 0.3s;
             height: 60px;
-            @media (min-width: 3000px) {
-              height: 120px !important;
-            }
+            // @media (min-width: 3000px) {
+            //   height: 120px !important;
+            // }
             @media (min-width: 1921px) {
               height: 90px;
             }
@@ -221,10 +221,10 @@
               font-size: 28px;
               line-height: 33px;
             }
-            @media (min-width: 3000px) {
-              font-size: 40px;
-              line-height: 51px;
-            }
+            // @media (min-width: 3000px) {
+            //   font-size: 40px;
+            //   line-height: 51px;
+            // }
           }
         }
       }

@@ -10,9 +10,9 @@
     @media (min-width: 1921px) {
       width: 1672px;
     }
-    @media (min-width: 3000px) {
-      width: 2472px;
-    }
+    // @media (min-width: 3000px) {
+    //   width: 2472px;
+    // }
     .portfolio-cont {
       display: flex;
       gap: 41px;
@@ -30,9 +30,9 @@
         width: 622px;
         height: auto;
       }
-      @media (min-width: 3000px) {
-        width: 908px;
-      }
+      // @media (min-width: 3000px) {
+      //   width: 908px;
+      // }
     }
   }
 }
@@ -48,9 +48,9 @@ tr {
     width: 65%;
     height: 50px;
   }
-  @media (min-width: 3000px) {
-    height: 100px;
-  }
+  // @media (min-width: 3000px) {
+  //   height: 100px;
+  // }
   .img-cont0,
   .img-cont1,
   .img-cont2 {
@@ -86,9 +86,9 @@ tr {
     @media (min-width: 1921px) {
       font-size: 40px;
     }
-    @media (min-width: 3000px) {
-      font-size: 54px;
-    }
+    // @media (min-width: 3000px) {
+    //   font-size: 54px;
+    // }
   }
   .space {
     display: flex;
@@ -97,19 +97,19 @@ tr {
       font-size: 40px !important;
       gap: 14px;
     }
-    @media (min-width: 3000px) {
-      font-size: 48px !important;
-      gap: 14px;
-    }
+    // @media (min-width: 3000px) {
+    //   font-size: 48px !important;
+    //   gap: 14px;
+    // }
   }
   .arrow-outward {
     width: 14px;
     height: 14px;
     display: none;
-    @media (min-width: 3000px) {
-      width: 28px !important;
-      height: 28px !important;
-    }
+    // @media (min-width: 3000px) {
+    //   width: 28px !important;
+    //   height: 28px !important;
+    // }
   }
   &:first-child {
     border-top: 1px solid rgba(61, 207, 182, 1);
@@ -167,18 +167,18 @@ tbody {
   @media (min-width: 1921px) {
     height: 600px;
   }
-  @media (min-width: 3000px) {
-    height: 690px;
-  }
+  // @media (min-width: 3000px) {
+  //   height: 690px;
+  // }
 }
 
 .view-img {
   @media (min-width: 2000px) {
     width: 450px;
   }
-  @media (min-width: 3000px) {
-    width: 700px;
-  }
+  // @media (min-width: 3000px) {
+  //   width: 700px;
+  // }
 }
 
 .color-hover {

@@ -23,9 +23,9 @@
       width: 1672px;
       gap: 72px;
     }
-    @media (min-width: 3000px) {
-      width: 2472px;
-    }
+    // @media (min-width: 3000px) {
+    //   width: 2472px;
+    // }
   }
 }
 .contact-cont {
@@ -53,10 +53,10 @@
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       color: #3dcfb6;
-      @media (min-width: 3000px) {
-        font-size: 44px;
-        line-height: 44px;
-      }
+      // @media (min-width: 3000px) {
+      //   font-size: 44px;
+      //   line-height: 44px;
+      // }
     }
     .small-para-thin {
       font-family: "Karla-light";
@@ -71,10 +71,10 @@
         font-size: 28px;
         line-height: 30px;
       }
-      @media (min-width: 3000px) {
-        font-size: 39px;
-        line-height: 52px;
-      }
+      // @media (min-width: 3000px) {
+      //   font-size: 39px;
+      //   line-height: 52px;
+      // }
     }
     .small-para-bold {
       font-family: "Karla";
@@ -89,10 +89,10 @@
         font-size: 28px;
         line-height: 30px;
       }
-      @media (min-width: 3000px) {
-        font-size: 44px;
-        line-height: 44px;
-      }
+      // @media (min-width: 3000px) {
+      //   font-size: 44px;
+      //   line-height: 44px;
+      // }
     }
   }
 }
@@ -262,9 +262,9 @@
   width: 616px;
   height: 131px;
   border-bottom: 1px solid rgba(61, 207, 182, 0.5);
-  @media (min-width: 3000px) {
-    height: 245px;
-  }
+  // @media (min-width: 3000px) {
+  //   height: 245px;
+  // }
   @media (min-width: 1921px) {
     width: 100%;
     height: 200px;
@@ -307,10 +307,10 @@
       font-size: 48px;
       line-height: 48px;
     }
-    @media (min-width: 3000px) {
-      font-size: 48px;
-      line-height: 48px;
-    }
+    // @media (min-width: 3000px) {
+    //   font-size: 48px;
+    //   line-height: 48px;
+    // }
   }
   input {
     outline: none;
@@ -394,15 +394,15 @@
       height: 34px;
       width: 34px;
     }
-    @media (min-width: 3000px) {
-      height: 48px !important;
-      width: 48px !important;
-    }
+    // @media (min-width: 3000px) {
+    //   height: 48px !important;
+    //   width: 48px !important;
+    // }
     .checkbox {
-      @media (min-width: 3000px) {
-        height: 48px !important;
-        width: 48px !important;
-      }
+      // @media (min-width: 3000px) {
+      //   height: 48px !important;
+      //   width: 48px !important;
+      // }
       @media (min-width: 1921px) {
         height: 34px;
         width: 34px;
@@ -464,13 +464,12 @@
         font-size: 28px;
         line-height: 28px;
       }
-      @media (min-width: 3000px) {
-        font-size: 34px;
-        line-height: 34px;
-      }
+      // @media (min-width: 3000px) {
+      //   font-size: 34px;
+      //   line-height: 34px;
+      // }
     }
   }
-
   .checkbox {
     position: absolute;
     width: 18px;

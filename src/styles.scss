@@ -61,10 +61,10 @@
   @media (min-width: 1921px) {
     font-size: 42px;
   }
-  @media (min-width: 3000px) {
-    font-size: 72px;
-    line-height: 72px;
-  }
+  // @media (min-width: 3000px) {
+  //   font-size: 72px;
+  //   line-height: 72px;
+  // }
 }
 
 h1 {
@@ -84,10 +84,10 @@ h1 {
     font-size: 100px;
     line-height: 100px;
   }
-  @media (min-width: 3000px) {
-    font-size: 130px;
-    line-height: 130px;
-  }
+  // @media (min-width: 3000px) {
+  //   font-size: 130px;
+  //   line-height: 130px;
+  // }
 }
 
 h2 {
@@ -101,9 +101,9 @@ h2 {
   @media (max-width: 800px) {
     text-align: center;
   }
-  @media (min-width: 3000px) {
-    font-size: 72px;
-  }
+  // @media (min-width: 3000px) {
+  //   font-size: 72px;
+  // }
 }
 
 .paragraph-no-opacity {
@@ -127,10 +127,10 @@ h2 {
     font-size: 28px !important;
     line-height: normal !important;
   }
-  @media (min-width: 3000px) {
-    font-size: 44px !important;
-    line-height: 44px !important;
-  }
+  // @media (min-width: 3000px) {
+  //   font-size: 44px !important;
+  //   line-height: 44px !important;
+  // }
 
 }
 
@@ -151,10 +151,10 @@ h2 {
   white-space: nowrap;
   position: relative;
   cursor: pointer;
-  @media (min-width: 1921px) {
-    font-size: 40px;
-    height: 90px;
-  }
+  // @media (min-width: 1921px) {
+  //   font-size: 40px;
+  //   height: 90px;
+  // }
   @media (max-width: 450px) {
     padding: 8px 10px;
   }
