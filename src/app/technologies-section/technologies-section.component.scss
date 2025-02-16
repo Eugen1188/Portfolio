@@ -248,10 +248,10 @@
 .btn-bigscreen {
   height: 48px;
   width: max-content;
-  @media (min-width: 1921px) {
-    width: 250px !important;
-    height: 90px;
-  }
+  // @media (min-width: 1921px) {
+  //   width: 250px !important;
+  //   height: 90px;
+  // }
 }
 
 .change-color {
