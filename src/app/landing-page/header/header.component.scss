@@ -127,12 +127,9 @@ nav {
     transform: translateY(25px);
     display: none;
     position: absolute;
-    // @media (min-width: 1921px) {
-    //     position: absolute;
-    //     width: 20px;
-    //     height: 20px;
-    //     bottom: 30px;
-    // }
+    @media (min-width: 1921px) {
+        transform: translateY(35px);
+    }
   }
   a {
     text-decoration: none;
