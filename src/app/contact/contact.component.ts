@@ -18,16 +18,13 @@ export class ContactComponent {
   placeholderNameError: string = "Oops! it seems your name is missing";
   placeholderEmailError: string = "Hoppla! your email is required";
   placeholderMessageError: string = "What do you need to develop?";
-
   placeholderName: string = "Your name goes here";
   placeholderEmail: string = "youremail@email.com";
   placeholderMessage: string = "Hello Eugen, I am interested in...";
 
   sendSuccess:boolean = false;
   emailSent:boolean = false;
-
   http = inject(HttpClient)
-
   mailTest = false;
 
   post = {
@@ -47,17 +44,15 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            // this.sendSuccessMessage();
             this.playAnimation();
           },
           error: (error) => {
             console.error(error);
           },
-          // complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
-      // this.sendSuccessMessage()
+
     }
   }
 
@@ -67,13 +62,6 @@ export class ContactComponent {
         this.emailSent = false;
       }, 5000);
   }
-
-  // sendSuccessMessage() {
-  //   this.sendSuccess = true;
-  //   setTimeout(() => {
-  //     this.sendSuccess = false;
-  //   }, 5000);
-  // }
 
   contactData = {
     name: "",

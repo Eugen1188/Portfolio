@@ -57,10 +57,10 @@ export class PortfolioSectionComponent {
         'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.',
       ],
       linkLiveTest: [
-        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
+        'http://ferchow-eugen.de/dabubble/index.html',
       ],
       linkGit: [
-        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
+        'https://github.com/Eugen1188/da-bubble',
       ],
     },
   ];
