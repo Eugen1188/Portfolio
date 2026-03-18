@@ -25,7 +25,7 @@ export class PortfolioSectionComponent {
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzern und Kategorien zu. ',
       ],
       linkLiveTest: [
-        'http://ferchow-eugen.de/Kanban_Projekt/index.html',
+        '/assets/projects/Kanban_Projekt/index.html',
       ],
       linkGit: [
         'https://github.com/Eugen1188/Join-Projekt',
