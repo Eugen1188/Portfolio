@@ -28,7 +28,7 @@ export class ContactComponent {
   emailSent: boolean = false;
   mailTest = false;
 
-  endPoint = '/mail/sendMail.php';
+  endPoint = '/assets/sendMail.php';
 
   contactData = {
     name: '',
