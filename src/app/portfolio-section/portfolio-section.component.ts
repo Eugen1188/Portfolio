@@ -36,7 +36,7 @@ projects = [
     descriptionGer: [
       'Springen, laufen und werfen“-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.'
     ],
-    linkLiveTest: 'http://ferchow-eugen.de/elPolloLoco/index.html',
+    linkLiveTest: '/assets/projects/elPolloLoco/index.html',
     linkGit: 'https://github.com/Eugen1188/ElPolloLoco'
   },
   {
@@ -48,7 +48,7 @@ projects = [
     descriptionGer: [
       'Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.'
     ],
-    linkLiveTest: 'http://ferchow-eugen.de/dabubble/index.html',
+    linkLiveTest: '/assets/projects/dabubble/index.html',
     linkGit: 'https://github.com/Eugen1188/da-bubble'
   }
 ];
