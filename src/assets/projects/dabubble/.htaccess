@@ -16,8 +16,16 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /dabubble/
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /dabubble/index.html [L]
+  
+  # Don't rewrite if it's a real file or directory
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Don't rewrite static files
+  RewriteCond %{REQUEST_URI} \.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf|ico)$ [NC]
+  RewriteRule ^ - [L]
+  
+  # Rewrite everything else to index.html for SPA routing
+  RewriteRule ^ /dabubble/index.html [L]
 </IfModule>
