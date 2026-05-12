@@ -6,6 +6,8 @@
   AddType application/vnd.ms-fontobject .eot
   AddType font/ttf .ttf
   AddType font/otf .otf
+  AddType application/javascript .js
+  AddType text/css .css
   AddEncoding gzip .svgz
   AddType image/svg+xml .svg
   <FilesMatch "\.svg$">
@@ -17,15 +19,14 @@
   RewriteEngine On
   RewriteBase /dabubble/
   
-  # Don't rewrite if it's a real file or directory
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  # Always stop if it's a real file
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+  
+  # Always stop if it's a real directory
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
   
-  # Don't rewrite static files
-  RewriteCond %{REQUEST_URI} \.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf|ico)$ [NC]
-  RewriteRule ^ - [L]
-  
   # Rewrite everything else to index.html for SPA routing
-  RewriteRule ^ /dabubble/index.html [L]
+  RewriteRule ^(?!index\.html$)(.*)$ index.html [L]
 </IfModule>
