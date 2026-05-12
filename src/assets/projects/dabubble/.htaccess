@@ -1,6 +1,21 @@
+<IfModule mod_mime.c>
+  AddType audio/mp4 .m4a
+  AddType video/mp4 .mp4 .m4v
+  AddType application/font-woff .woff
+  AddType application/font-woff2 .woff2
+  AddType application/vnd.ms-fontobject .eot
+  AddType font/ttf .ttf
+  AddType font/otf .otf
+  AddEncoding gzip .svgz
+  AddType image/svg+xml .svg
+  <FilesMatch "\.svg$">
+    AddType "image/svg+xml" .svg
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /dabubble/angular-projects/DABubble/
+  RewriteBase /dabubble/
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
