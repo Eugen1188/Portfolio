@@ -17,7 +17,7 @@
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /dabubble/
+  RewriteBase /assets/projects/dabubble/
   
   # Always stop if it's a real file
   RewriteCond %{REQUEST_FILENAME} -f
