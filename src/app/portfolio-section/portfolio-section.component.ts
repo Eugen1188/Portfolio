@@ -24,7 +24,7 @@ projects = [
     descriptionGer: [
       'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzern und Kategorien zu.'
     ],
-    linkLiveTest: '/assets/projects/Kanban_Projekt/index.html',
+    linkLiveTest: 'https://eugen1188.github.io/join-kanban/',
     linkGit: 'https://github.com/Eugen1188/Join-Projekt'
   },
   {
