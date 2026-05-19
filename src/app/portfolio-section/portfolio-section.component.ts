@@ -36,7 +36,7 @@ projects = [
     descriptionGer: [
       'Springen, laufen und werfen“-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.'
     ],
-    linkLiveTest: '/assets/projects/elPolloLoco/index.html',
+    linkLiveTest: 'https://eugen1188.github.io/elpolloloco/',
     linkGit: 'https://github.com/Eugen1188/ElPolloLoco'
   },
   {
